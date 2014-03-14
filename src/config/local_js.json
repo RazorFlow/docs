@@ -1,0 +1,18 @@
+{
+    "articles": "../../docs",
+    "examples": "../../rfjs/devutils/examples",
+    "examplesImagesDir": "../../rfjs/exampleImages",
+    "exampleImagesLinkPath": "/static/transfer/exampleImages",
+    "examplesLinkPath": "/examples",
+    "exampleLiveLinkPath": "/examples",
+    "sources": ["../../rfjs/src/js/wrappers/*.js"],
+    "outputDir": "../../rfjs/docs",
+    "articlesOutput": "../../rfjs/docs",
+    "apiOutput": "../../rfjs/docs/api",
+    "apiTemplates": "../src/rd_templates_dev",
+    "articleTemplates": "../src/rd_templates_dev/article_layout",
+    "outputLinkPath": "",
+    "outputFileExt": "html",
+    "examplesExt": "js",
+    "onlyJSON": false
+}

@@ -1,0 +1,8 @@
+<% for(i=0; i<items.length; i++) {%>
+    <% if(currentClass == items[i]) { %>
+      <a class="list-group-item active" href="<%= items[i] %>.html"><%= items[i] %></a>
+    <% } else { %>
+      <a class="list-group-item" href="<%= items[i] %>.html"><%= items[i] %></a>
+    <% } %>
+<% } %>
+
