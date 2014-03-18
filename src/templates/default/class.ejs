@@ -30,10 +30,13 @@
     var tItem = item;
     while(tItem.augments) {
         var base = tree.findNodeByClassName(tItem.augments.name);
-        for(var j=0; j<base.methods.length; j++) {
+        if(base) {
+            for(var j=0; j<base.methods.length; j++) {
 %>
-            <%- render('method.ejs', {tree: tree, item: base.methods[j]}) %>
-<%      } 
+              <%- render('method.ejs', {tree: tree, item: base.methods[j]}) %>
+
+<%          }
+        } 
        tItem = base;
     } 
 }
