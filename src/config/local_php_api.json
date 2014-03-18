@@ -10,7 +10,7 @@
     "outputDir": "../../build/docs",
     "articlesOutput": "../../build/docs",
     "articleTemplates": "../templates/default/article_layout",
-    "apiOutput": "../../build/api",
+    "apiOutput": "../../build/api/php",
     "apiTemplates": "../templates/default",
     "outputLinkPath": "",
     "outputFileExt": "html",
