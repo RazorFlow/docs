@@ -1,6 +1,6 @@
 <meta>
 {
-	"title": "RazorFlow PHP Documentation",
+	"title": "RazorFlow JS Documentation",
 	"subtitle": ""
 }
 </meta>
