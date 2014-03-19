@@ -1,21 +1,18 @@
-<%= currentClass %>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="list-group api_nav_list">
-                <%- render('nav.ejs', {items: tree.findAllClassNames(), currentClass: currentClass}) %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav">
+                    <%- render('nav.ejs', {items: tree.findAllClassNames({access: 'public'})}) %>
+                </ul>
             </div>
-        </div>
-        <div class="col-md-8">
-            <% if(currentClass != 'index') { %>
-                <%- render('class.ejs', {tree: tree, item: tree.findNodeByClassName(currentClass)}) %>
+            <div class="col-md-8">
+                <% 
+                var classNode = tree.findNodeByClassName(currentClass);
+                if(currentClass != 'index' && (classNode.access && classNode.access.name !== 'private')) { 
+                %>
+                    <%- render('class.ejs', {tree: tree, item: tree.findNodeByClassName(currentClass)}) %>
             <% } else { %>
                 <%- render('index.ejs', {}) %>
             <% } %>
-        </div>
+            </div>
     </div>
-</div>
-
-<script>
-
-</script>

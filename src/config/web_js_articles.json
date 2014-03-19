@@ -1,0 +1,16 @@
+{
+    "noApi": true,
+    "articles": "../content/js",
+    "examples": "../examples",
+    "examplesImagesDir": "../exampleImages",
+    "exampleImagesLinkPath": "/exampleImages",
+    "examplesLinkPath": "/examples",
+    "exampleLiveLinkPath": "/examples",
+    "outputDir": "../../../webrf/build/docs",
+    "articlesOutput": "../../../webrf/build/docs/js",
+    "articleTemplates": "../templates/razorflow_dotcom/article_layout",
+    "outputLinkPath": "/docs/js",
+    "outputFileExt": "html",
+    "examplesExt": "js",
+    "onlyJSON": false
+}

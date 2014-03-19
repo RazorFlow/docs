@@ -1,46 +1,49 @@
+
 <div class="container">
-    <div class="row example_row">
-        <div class="col-md-6 example_code">
+    <div class="row">
+        <div class="col-md-4">
 
 ~~~
 <%- code %>
 ~~~
 
-</div>
-<div class="col-md-2">
+        </div>
+        <div class="col-md-4">
             <div class="thumbnail">
                 <%- thumbnail %> 
             </div>
             <div class="buttons">
-            <div class="zoommodal modal fade">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                   <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                     <h4 class="modal-title">Modal title</h4>
-                   </div>
-                   <div class="modal-body">
-                     <img src="<%- image %>"/>
-                   </div>
+                <div class="zoommodal modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        <img src="<%- image %>"/>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="livemodal modal fade">
-               <div class="modal-dialog">
-                 <div class="modal-content">
-                   <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                     <h4 class="modal-title">Modal title</h4>
-                   </div>
-                   <div class="modal-body">
-                     <iframe src="<%= live %>" width="1024" height="768" frameBorder="0">
-                     </iframe>
-                   </div>
-                 </div>
-               </div>
-             </div>
-                <!-- <button class="btn btn-primary zoom">Zoom</button> -->
-                <button class="btn btn-primary live hidden-sm hidden-xs">View Live</button>
+                <div class="livemodal modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        <iframe src="<%= live %>">
+                        </iframe>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary zoom">Zoom</button>
+                <button class="btn btn-primary live">View Live</button>
             </div>
         </div>
     </div>

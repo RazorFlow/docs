@@ -1,0 +1,16 @@
+{
+    "noApi": true,
+    "articles": "../content/php",
+    "examples": "../examples",
+    "examplesImagesDir": "../exampleImages",
+    "exampleImagesLinkPath": "/exampleImages",
+    "examplesLinkPath": "/examples",
+    "exampleLiveLinkPath": "/examples",
+    "outputDir": "../../../webrf/build/docs",
+    "articlesOutput": "../../../webrf/build/docs/php",
+    "articleTemplates": "../templates/razorflow_dotcom/article_layout",
+    "outputLinkPath": "/docs/php",
+    "outputFileExt": "html",
+    "examplesExt": "js",
+    "onlyJSON": false
+}
