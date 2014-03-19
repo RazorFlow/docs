@@ -1,5 +1,6 @@
 {
     "noApi": false,
+    "noArticles": true,
     "articles": "../content",
     "examples": "../examples",
     "examplesImagesDir": "../exampleImages",
