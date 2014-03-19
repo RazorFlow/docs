@@ -7,7 +7,7 @@
     "exampleImagesLinkPath": "/exampleImages",
     "examplesLinkPath": "/examples",
     "exampleLiveLinkPath": "/examples",
-    "sources": ["../../../rfjs/src/js/components/*.js"],
+    "sources": ["../../../jsrf/src/js/components/*.js"],
     "outputDir": "../../build/docs",
     "articlesOutput": "../../build/docs",
     "articleTemplates": "../templates/default/article_layout",

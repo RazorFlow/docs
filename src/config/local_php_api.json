@@ -7,7 +7,7 @@
     "exampleImagesLinkPath": "/exampleImages",
     "examplesLinkPath": "/examples",
     "exampleLiveLinkPath": "/examples",
-    "sources": ["../../../phpwrapper/src/lib/components/*.php"],
+    "sources": ["../../../phprf/src/lib/components/*.php"],
     "outputDir": "../../build/docs",
     "articlesOutput": "../../build/docs",
     "articleTemplates": "../templates/default/article_layout",
