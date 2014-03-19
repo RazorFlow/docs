@@ -9,7 +9,7 @@
     "outputDir": "../../build/docs",
     "articlesOutput": "../../build/docs/js",
     "articleTemplates": "../templates/default/article_layout",
-    "outputLinkPath": "",
+    "outputLinkPath": "/docs",
     "outputFileExt": "html",
     "examplesExt": "js",
     "onlyJSON": false
