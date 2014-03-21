@@ -10,7 +10,7 @@
 {{ anchor("component_object", "What is a component object?") }}
 ### What is a component object?
 
-A component object is an instance of a component class like {{ linkApi("ChartComponent", "") }}, etc. For example, if you have the code:
+A component object is an instance of a component class like {{ linkApi("js", "ChartComponent", "") }}, etc. For example, if you have the code:
 
 ~~~
 var chart1 = new ChartComponent();

@@ -12,7 +12,7 @@ Some charts with a Y Axis can be configured. The aspects of the Y Axis that can 
 1. The name of the Y-Axis
 2. The number formatting of the Y AXis.
 
-To do this, you will need to use the {{ linkApi("ChartComponent", "setYAxis") }} function.
+To do this, you will need to use the {{ linkApi("js", "ChartComponent", "setYAxis") }} function.
 
 ~~~
     chart.setYAxis("Sales", {
@@ -25,4 +25,4 @@ To do this, you will need to use the {{ linkApi("ChartComponent", "setYAxis") }}
 
 ### Complete example
 
-{{ embedExample ('chart_yaxis') }}
+{{ embedExample ('js', 'chart_yaxis') }}

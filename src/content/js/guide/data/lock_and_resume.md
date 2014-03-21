@@ -21,6 +21,6 @@ You can use `lock` and `unlock` to add components first to the dashboard, and en
 
 But for a simple demonstration, here's a an example of a chart which displays the dashboard immediately, but puts the chart in "loading" state for 2 seconds until the timeout is called:
 
-{{ embedExample ('locking0') }}
+{{ embedExample ('js', 'locking0') }}
 
 We will be covering more about how locking can help you load data in a later article.

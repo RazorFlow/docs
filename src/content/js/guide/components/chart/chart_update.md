@@ -9,7 +9,7 @@
 
 ## Updating data values
 
-You can update a chart's data anytime, even after it's rendered using the {{ linkApi("ChartComponent", "updateSeries") }} function. For example:
+You can update a chart's data anytime, even after it's rendered using the {{ linkApi("js", "ChartComponent", "updateSeries") }} function. For example:
 
 ~~~
 chart2.updateSeries ("series_1", [3, 5, 2]);
@@ -22,4 +22,4 @@ This function is useful in several situations, two of them are:
 
 ## Example
 
-{{ embedExample ('chart_updatevals') }}
+{{ embedExample ('js', 'chart_updatevals') }}

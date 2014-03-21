@@ -12,11 +12,11 @@ Once you add the filter component in the dashboard
 
 ### Access the input values in a filter component
 
-You can access the input values that the user has input into the filter component at any time, by calling the {{ linkApi("FilterComponent", "getInputValue") }} function on the FilterComponent object.
+You can access the input values that the user has input into the filter component at any time, by calling the {{ linkApi("js", "FilterComponent", "getInputValue") }} function on the FilterComponent object.
 
 #### Get a single input value
 
-You can get a single value that the user has currently entered into the form by using the {{ linkApi("FilterComponent", "getInputValue") }} function. Note that {{ linkApi("FilterComponent", "getInputValue") }} **only returns a value if the user input something**.
+You can get a single value that the user has currently entered into the form by using the {{ linkApi("js", "FilterComponent", "getInputValue") }} function. Note that {{ linkApi("js", "FilterComponent", "getInputValue") }} **only returns a value if the user input something**.
 
 ~~~
 var selected_product = filter.getInputValue ('product_name');
@@ -25,7 +25,7 @@ var selected_status = filter.getInputValue ('delivery_date');
 {{ anchor ("getAllInputValues", "Get all input values") }}
 #### Get all input values
 
-You can get all the input values at one go using {{ linkApi("FilterComponent", "getAllInputValues") }}:
+You can get all the input values at one go using {{ linkApi("js", "FilterComponent", "getAllInputValues") }}:
 
 ~~~
 var values = filter.getAllInputValues ();
@@ -41,7 +41,7 @@ var values = filter.getAllInputValues ();
 
 #### Text Filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} with a text filter returns a string which is the user's input.
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} with a text filter returns a string which is the user's input.
 
 ~~~
 filter.getInputValue ("product_name");
@@ -52,7 +52,7 @@ filter.getInputValue ("product_name");
 
 #### Drop-Down/Select Filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} returns an object with 2 items:
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} returns an object with 2 items:
 
 * `text` - which is the text of the selected item
 * `index` - which is the index of the seleted item (starting from 0)
@@ -70,7 +70,7 @@ filter.getInputValue("delivery_status");
 
 #### Multi Select filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} returns an object with 2 items:
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} returns an object with 2 items:
 
 * `text` - which is an array containing texts of selected items
 * `index` - which is the an array containing indices of the seleted items (starting from 0)
@@ -87,7 +87,7 @@ filter.getInputValue("item_category");
 
 #### Date Filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} returns a string with date formatted in "YYYY-MM-DD" format.
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} returns a string with date formatted in "YYYY-MM-DD" format.
 
 ~~~
 filter.getInputValue ("sale_date");
@@ -98,7 +98,7 @@ filter.getInputValue ("sale_date");
 
 #### Date Range Filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} returns an array with two strings. The first string is starting date, and second string is the ending date.
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} returns an array with two strings. The first string is starting date, and second string is the ending date.
 
 ~~~
 filter.getInputValue ("sale_period");
@@ -109,7 +109,7 @@ filter.getInputValue ("sale_period");
 
 #### Numeric Range Filter
 
-Calling {{ linkApi("FilterComponent", "getInputValue") }} returns an array with two numbers. The first string is starting value, and second string is the ending value.
+Calling {{ linkApi("js", "FilterComponent", "getInputValue") }} returns an array with two numbers. The first string is starting value, and second string is the ending value.
 
 ~~~
 filter.getInputValue ("sale_amount");

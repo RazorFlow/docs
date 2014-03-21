@@ -8,7 +8,7 @@
 </meta>
 ### Add a filter component to the dashboard
 
-You can add a filter component to the dashboard by creating an instance of the {{ linkApi("FilterComponent", "") }} object in your code.
+You can add a filter component to the dashboard by creating an instance of the {{ linkApi("js", "FilterComponent", "") }} object in your code.
 
 ~~~
 var filter = new FilterComponent();
@@ -27,7 +27,7 @@ Each filter in the filter component will have a unique key. This key is used to 
 
 #### Text Filter
 
-A text filter allows the user to enter text. To add a text filter, use the {{ linkApi("FilterComponent", "addTextFilter") }} function
+A text filter allows the user to enter text. To add a text filter, use the {{ linkApi("js", "FilterComponent", "addTextFilter") }} function
 
 ~~~
 filter.addTextFilter ("product_name", "Product Name");
@@ -48,7 +48,7 @@ filter.addTextFilter ("product_name", "Product Name", {
 
 #### Drop-Down/Select Filter
 
-You can add a Drop-Down select element to your filter using the {{ linkApi("FilterComponent", "addSelectFilter") }}.
+You can add a Drop-Down select element to your filter using the {{ linkApi("js", "FilterComponent", "addSelectFilter") }}.
 
 ~~~
 filter.addSelectFilter ("delivery_status", "Delivery Status", [
@@ -114,7 +114,7 @@ This selects indices `1` and `2` in the array. Note that since the array starts 
 
 #### Date Filter
 
-A date filter allows your users to pick a single date, use the {{ linkApi("FilterComponent", "addDateFilter") }} function.
+A date filter allows your users to pick a single date, use the {{ linkApi("js", "FilterComponent", "addDateFilter") }} function.
 
 ~~~
 filter.addDateFilter ("sale_date", "Sale Date");
@@ -135,7 +135,7 @@ filter.addDateFilter ("sale_date", "Sale Date", {
 
 #### Date Range Filter
 
-A date range filter allows your users to select a range of dates by specifying a start and end date, use the {{ linkApi("FilterComponent", "addDateRangeFilter") }} function.
+A date range filter allows your users to select a range of dates by specifying a start and end date, use the {{ linkApi("js", "FilterComponent", "addDateRangeFilter") }} function.
 
 ~~~
 filter.addDateFilter ("sale_period", "Sale Period");
@@ -165,7 +165,7 @@ If the default start date is not provided, the current date is used. If the defa
 
 #### Numeric Range Filter
 
-A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("FilterComponent", "addNumericRangeFilter") }} function.
+A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("js", "FilterComponent", "addNumericRangeFilter") }} function.
 
 ~~~
 filter.addDateFilter ("sale_amount", "Sale Amount", [0, 100]);

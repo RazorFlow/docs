@@ -30,5 +30,5 @@ table.addColumn("sales", "Sales Amount", {
 });
 ~~~
 
-{{ embedExample ("table_formatting") }}
+{{ embedExample ('js', "table_formatting") }}
 

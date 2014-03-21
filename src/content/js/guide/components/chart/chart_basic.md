@@ -39,7 +39,7 @@ The steps taken to build this dashboard are:
 
 To create a pie chart, use the `setPieValues` function instead of `addSeries`. Since a pie chart can only have a single set of values, you can call this function only once.
 
-<%- embedExample ('chart_pie') %>
+<%- embedExample ('js', 'chart_pie') %>
 
 ### Notes:
 

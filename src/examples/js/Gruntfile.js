@@ -8,36 +8,36 @@ module.exports = function (grunt) {
                     },
                     examples: {
                         'js': {
-                            src: "src/examples/js/",
+                            src: "src/examples/src/js/",
                             srcSuffix: ".js",
-                            imagePrefix: "http://samples.razorflow.com/_assets/images/js/",
+                            images: "src/examples/images/js/",
                             imageSuffix: ".png",
-                            thumbPrefix: "http://samples.razorflow.com/_assets/images/js/thumbs/",
+                            thumbs: "src/exampels/thumbs/js/",
                             thumbSuffix: ".png",
-                            livePrefix: "http://samples.razorflow.com/js/",
-                            liveSuffix: ".html"
+                            livePrefix: "http://sample.razorflow.com/php/",
+                            liveSuffix: ""
                         },
                         'php': {
-                            src: "src/examples/php/",
+                            src: "src/examples/src/php/",
                             srcSuffix: ".js",
-                            imagePrefix: "http://samples.razorflow.com/_assets/images/php/",
+                            images: "src/examples/images/php/",
                             imageSuffix: ".png",
-                            thumbPrefix: "http://samples.razorflow.com/_assets/images/php/thumbs/",
+                            thumbs: "src/exampels/thumbs/php/",
                             thumbSuffix: ".png",
-                            livePrefix: "http://samples.razorflow.com/php/",
-                            liveSuffix: ".html"
+                            livePrefix: "http://sample.razorflow.com/php/",
+                            liveSuffix: ""
                         }
                     },
                     api: {
                         "js": {
-                            src: ["../jsrf/src/js/components/*.js"],
-                            out: "build/docs/api/js",
-                            relativeLinkPath: "api/js/"
+                            src: "../jsrf/src/js/**/*.js",
+                            out: "build/docs/js/api",
+                            relativeLinkPath: "js/api/"
                         },
                         "php": {
-                            src: ["../phprf/src/lib/components/*.php"],
-                            out: "build/docs/api/php",
-                            relativeLinkPath: "api/php/"
+                            src: "../phprf/src/lib/**/*.php",
+                            out: "build/docs/php/api",
+                            relativeLinkPath: "php/api/"
                         }
                     },
                     linkPrefix: "",
@@ -50,9 +50,8 @@ module.exports = function (grunt) {
 
                     ... all other remaining EJS files
                      */
-                    template: "src/templates/default/article_layout",
-                    apiTemplates: "src/templates/default"
-                }    
+                    template: "src/templates/default/article_layout"
+                }
             }
         },
         watch: {

@@ -7,7 +7,7 @@
 }
 </meta>
 
-You can add a table component to the dashboard by creating an intance of the {{ linkApi("TableComponent", "") }} class in your dashboard code.
+You can add a table component to the dashboard by creating an intance of the {{ linkApi("js", "TableComponent", "") }} class in your dashboard code.
 
 ~~~
 var table = new TableComponent ();
@@ -28,7 +28,7 @@ For adding the data, there are two steps:
 
 ### Adding columns
 
-To add columns to the table, you can use the {{ linkApi("TableComponent", "addColumn") }} function. The first parameter to the {{ linkApi("TableComponent", "addColumn") }} function is a unique string key for the column.
+To add columns to the table, you can use the {{ linkApi("js", "TableComponent", "addColumn") }} function. The first parameter to the {{ linkApi("js", "TableComponent", "addColumn") }} function is a unique string key for the column.
 
 ~~~
 table.addColumn ('storeName', "Store Name");
@@ -63,4 +63,4 @@ var data = [
 table.addMultipleRows (data);
 ~~~
 
-{{ embedExample ("table0") }}
+{{ embedExample ('js', "table0") }}
