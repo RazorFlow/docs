@@ -1,3 +1,4 @@
+<%= title %>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -15,7 +16,7 @@
             </ul>
         </div>
         <div class="col-md-8">
-            <div class="content">
+            <div class="docContent">
                 <%- content %>
             </div>
             <div class="links">
@@ -47,5 +48,12 @@
     for(var i = 0; i < 20; i ++) {if (rootParent.length == 0) { break; } root = rootParent; window.tv.expand(root); rootParent = window.tv.parent(root); }
     $('pre').addClass('language-javascript');
     Prism.highlightAll();
+    $('.zoom').on('click', function() {
+      $(this).parent().find('.zoommodal').modal('show');
+    })
+    $('.live').on('click', function() {
+      $(this).parent().find('.livemodal').modal('show');
+    })
+
   })
 </script>
