@@ -1,8 +1,12 @@
 <meta>
 {
 	"title": "RazorFlow Test 2",
-	"subtitle": ""
+	"subtitle": "",
+	"index": 0
 }
 </meta>
 
 ## Test article 2
+
+{{ embedExample ('php', 'chart_pie') }}
+
