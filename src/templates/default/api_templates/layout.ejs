@@ -15,8 +15,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <ul class="nav">
-                    <%- render('nav.ejs', {items: tree.findAllClassNames({access: 'public'})}) %>
+                <ul class="">
+                    <%- articleNav %>
+                    <%- apiNav %>
                 </ul>
             </div>
             <div class="col-md-8">
