@@ -1,7 +1,0 @@
-{
-    "files": ["../../rfjs/src/js/wrappers/*.js"],
-    "templateDir": ".",
-    "outputDir": "../../website/docs/js/api",
-    "outputFileExt": "php",
-    "onlyJSON": false
-}
