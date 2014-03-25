@@ -1,7 +1,7 @@
 <meta>
 {
     "title": "Creating a dashboard",
-    "id": "create_standalone",
+    "id": "php_create_standalone",
     "index": 0
 }
 </meta>

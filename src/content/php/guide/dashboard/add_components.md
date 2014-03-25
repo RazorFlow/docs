@@ -2,7 +2,7 @@
 {
     "title": "Add components to your dashboard",
     "subtitle": "",
-    "id": "add_components",
+    "id": "php_add_components",
     "index": 1
 }
 </meta>
