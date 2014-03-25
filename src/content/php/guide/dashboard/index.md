@@ -2,14 +2,12 @@
 {
 	"title": "Dashboard Fundamentals",
 	"subtitle": "",
-	"id": "dashboard_guide"
+	"id": "php_dashboard_guide"
 }
 </meta>
 
 ### Basics concepts
 
-* {{ linkArticle("create_standalone") }}
-* {{ linkArticle("add_components") }}
-* {{ linkArticle("arrange_components") }}
-* {{ linkArticle("standalone_vs_embedded") }}
-* {{ linkArticle ("webframework_standalone") }}
+* {{ linkArticle("php_create_standalone") }}
+* {{ linkArticle("php_add_components") }}
+* {{ linkArticle("php_arrange_components") }}

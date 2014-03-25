@@ -2,7 +2,7 @@
 {
     "title": "Component dimensions and arrangement",
     "subtitle": "",
-    "id": "arrange_components",
+    "id": "php_arrange_components",
     "index": 2
 }
 </meta>
