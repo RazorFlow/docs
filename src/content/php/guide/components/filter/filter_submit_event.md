@@ -17,7 +17,9 @@ public function buildDashboard(){
 }
 
 public function function_name($source, $target, $params){
-
+  // Find the locked component by Id.
+  $table_obj = $this->getComponentByID("table_id");
+  $table_obj->setCaption ("New Caption");
 }
 ~~~
 
