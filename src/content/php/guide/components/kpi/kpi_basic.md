@@ -12,7 +12,7 @@
 In order to add a KPI component to the dashboard, you need to create an instance of the component and add it to the dashboard.
 
 ~~~
-$kpi = new KPIComponent ();
+$kpi = new KPIComponent ("kpi1");
 $kpi->setDimensions (4, 4);
 ~~~
 
