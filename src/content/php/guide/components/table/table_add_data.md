@@ -41,7 +41,7 @@ $table->addColumn ('salesAmount', "Sales");
 Let's say a table has 3 columns like this:
 
 ~~~
-$table = new TableComponent ();
+$table = new TableComponent ("table1");
 $table->addColumn ('zone', "Store Zone Name");
 $table->addColumn ('name', "Store Name");
 $table->addColumn ('sale', "Sales amount");
