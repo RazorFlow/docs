@@ -2,12 +2,12 @@
 {
 	"title": "Common component concepts",
 	"subtitle": "",
-	"id":"number_formatting",
+	"id":"php_number_formatting",
 	"index": 1
 }
 </meta>
 
-{{ anchor("numberFormatting", "Number Formatting Parameters") }}
+{{ anchor("phpNumberFormatting", "Number Formatting Parameters") }}
 
 You can configure how numbers in your dashboard are displayed in a variety of places. For example, while displaying a column of data in a table. Formatting numbers adds more meaning to them. For instance - adding a "$" or a similar currency symbol before a value indicates that this is a currency figure.
 
