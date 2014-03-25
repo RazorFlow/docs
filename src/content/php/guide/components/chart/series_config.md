@@ -3,7 +3,7 @@
     "title": "Chart Series Configuration",
     "subtitle": "",
     "index": 2,
-    "id": "series_config"
+    "id": "php_series_config"
 }
 </meta>
 

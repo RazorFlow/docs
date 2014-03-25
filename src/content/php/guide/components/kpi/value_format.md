@@ -2,7 +2,7 @@
 {
 	"title": "Customizing KPI Display value",
 	"subtitle": "",
-	"id": "value_format",
+	"id": "php_value_format",
 	"index": 1
 }
 </meta>

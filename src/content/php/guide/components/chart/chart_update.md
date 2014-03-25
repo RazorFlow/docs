@@ -3,7 +3,7 @@
     "title": "Updating chart data",
     "subtitle": "",
     "index": 4,
-    "id": "chart_update"
+    "id": "php_chart_update"
 }
 </meta>
 

@@ -3,7 +3,7 @@
     "title": "Configuring the Y-Axis of the chart",
     "subtitle": "",
     "index": 3,
-    "id": "chart_yaxis"
+    "id": "php_chart_yaxis"
 }
 </meta>
 
