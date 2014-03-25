@@ -14,9 +14,9 @@
 You can change the width of a column of a table using the 'columnWidth' parameter. Simply specify the width of the column in pixels using this option
 
 ~~~
-table.addColumn("sales", "Sales Amount", {
-	columnWidth: 140
-});
+$table->addColumn("sales", "Sales Amount", array(
+	"columnWidth" => 140
+));
 ~~~
 
 ### Change the way numbers are displayed 
@@ -24,11 +24,11 @@ table.addColumn("sales", "Sales Amount", {
 You can configure how number are formatted and displayed in the table using the standard {{ ref("numberFormatting") }}. However, you need to also specify that the column's data type is a number for this.
 
 ~~~
-table.addColumn("sales", "Sales Amount", {
-	dataType: "number",
-	numberPrefix: "$"
-});
+$table->addColumn("sales", "Sales Amount", array(
+	"dataType" => "number",
+	"numberPrefix" => "$"
+));
 ~~~
 
-{{ embedExample ('js', "table_formatting") }}
+{{ embedExample ('php', "table_formatting") }}
 
