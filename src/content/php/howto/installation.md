@@ -6,13 +6,14 @@
 }
 </meta>
 
+### Installation Instructions For PHP
 Under most circumstances, installing RazorFlow is simple and will take under five minutes to complete.
 
 ### Things you need before installing Dashboards for PHP
 
 1. A web server running on Windows, or Linux, or OSX.
 
-  If you don’t have a web server installed, RazorFlow highly recommends XAMPP which is available for Windows, Linux and OSX.
+  If you don't have a web server installed, RazorFlow highly recommends XAMPP which is available for Windows, Linux and OSX.
 
   RazorFlow officially supports Apache 2 at this time of writing. Instructions for other web servers including IIS, nginx, lighttpd, Cherokee will be added soon.
 2. PHP 5.4 (or above) installed and configured on your web server. 

@@ -2,10 +2,10 @@
 {
 	"title": "Common component concepts",
 	"subtitle": "",
-	"id":"common_guide"
+	"id":"php_common_guide"
 }
 </meta>
 
 ### Basics
 
-* {{ linkArticle ("number_formatting")}}
+* {{ linkArticle ("php_number_formatting")}}

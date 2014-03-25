@@ -7,7 +7,6 @@
 }
 </meta>
 
-{{ anchor("component_object", "What is a component object?") }}
 ### What is a component object?
 
 A component object is an instance of a component class like {{ linkApi("php", "ChartComponent", "") }}, etc. For example, if you have the code:
