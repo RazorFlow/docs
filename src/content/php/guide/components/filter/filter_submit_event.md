@@ -2,7 +2,7 @@
 {
 	"title": "Filter submit events",
 	"subtitle": "",
-	"id": "filter_submit_event",
+	"id": "php_filter_submit_event",
 	"index": 2
 }
 </meta>

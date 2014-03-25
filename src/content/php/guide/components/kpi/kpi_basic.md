@@ -2,7 +2,7 @@
 {
 	"title": "Getting Started with KPI Component",
 	"subtitle": "",
-	"id": "kpi_basic",
+	"id": "php_kpi_basic",
 	"index": 0
 }
 </meta>

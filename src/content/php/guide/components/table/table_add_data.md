@@ -2,7 +2,7 @@
 {
 	"title": "Adding data to the table",
 	"subtitle": "",
-	"id": "table_add_data",
+	"id": "php_table_add_data",
 	"index": 1
 }
 </meta>

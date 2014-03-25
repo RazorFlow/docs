@@ -3,7 +3,7 @@
 	"title": "Basic ChartComponent Functionality",
 	"subtitle": "",
   "index": 1,
-  "id": "chart_basic"
+  "id": "php_chart_basic"
 }
 </meta>
 

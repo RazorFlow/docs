@@ -3,7 +3,7 @@
 	"title": "Getting Started with the filter component",
 	"subtitle": "",
 	"index": 0,
-	"id": "filter_configure"
+	"id": "php_filter_configure"
 }
 </meta>
 ### Add a filter component to the dashboard
