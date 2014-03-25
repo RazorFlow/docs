@@ -12,9 +12,9 @@
 You can format the number displayed in the KPI by passing an option to  the {{ linkApi("js", "KPIComponent", "setValue") }} function like this:
 
 ~~~
-kpi.setValue (42, {
-	numberPrefix: "$"
-});
+$kpi->setValue (42, array(
+	"numberPrefix" => "$"
+));
 ~~~
 
 All the standard number formatting features are available. For a full list of available parameters and examples with their usage, see "Number formatting in razorflow"
@@ -24,7 +24,7 @@ All the standard number formatting features are available. For a full list of av
 You can change the color ofhat the KPI is displayed by setting the `kpiTextColor` parameter
 
 ~~~
-kpi.setValue (42, {
-	kpiTextColor: "red"
-})
+$kpi->setValue (42, array(
+	"kpiTextColor" => "red"
+));
 ~~~
