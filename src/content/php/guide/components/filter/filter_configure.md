@@ -8,15 +8,22 @@
 </meta>
 ### Add a filter component to the dashboard
 
-You can add a filter component to the dashboard by creating an instance of the {{ linkApi("js", "FilterComponent", "") }} object in your code.
+You can add a filter component to the dashboard by creating an instance of the {{ linkApi("php", "FilterComponent", "") }} object in your code.
 
 ~~~
-var filter = new FilterComponent();
-filter.setDimensions(4, 4);
+<?php
 
-// Configure the filter
+class SampleDasboard extends StandaloneDashboard{
+  public function buildDashboard () {
+    $filter = new FilterComponent("filter1");
+    $filter->setDimensions (4, 4);
 
-db.addComponent(filter);
+    $this->addComponent($filter);
+  }
+}
+
+$db = new SampleDashboard();
+$db->renderStandalone();
 ~~~
 
 ### Add form elements to filter component
@@ -27,10 +34,10 @@ Each filter in the filter component will have a unique key. This key is used to 
 
 #### Text Filter
 
-A text filter allows the user to enter text. To add a text filter, use the {{ linkApi("js", "FilterComponent", "addTextFilter") }} function
+A text filter allows the user to enter text. To add a text filter, use the {{ linkApi("php", "FilterComponent", "addTextFilter") }} function
 
 ~~~
-filter.addTextFilter ("product_name", "Product Name");
+$filter->addTextFilter ("product_name", "Product Name");
 ~~~
 
 There are 2 parameters:
@@ -41,21 +48,21 @@ There are 2 parameters:
 You can specify a default value of the text to be filled in by passing a configuration object as an extra parameter
 
 ~~~
-filter.addTextFilter ("product_name", "Product Name", {
-	defaultText: "Potato Chips"
-});
+$filter->addTextFilter ("product_name", "Product Name", array(
+	"defaultText" => "Potato Chips"
+));
 ~~~
 
 #### Drop-Down/Select Filter
 
-You can add a Drop-Down select element to your filter using the {{ linkApi("js", "FilterComponent", "addSelectFilter") }}.
+You can add a Drop-Down select element to your filter using the {{ linkApi("php", "FilterComponent", "addSelectFilter") }}.
 
 ~~~
-filter.addSelectFilter ("delivery_status", "Delivery Status", [
+$filter->addSelectFilter ("delivery_status", "Delivery Status", array(
 	"Delivered",
 	"Refunded",
 	"Cancelled"
-]);
+));
 ~~~
 
 There are 3 parameters:
@@ -67,13 +74,13 @@ There are 3 parameters:
 By default, the first option is always selected. But you can set another option to be selected like this:
 
 ~~~
-filter.addSelectFilter ("delivery_status", "Delivery Status", [
+$filter->addSelectFilter ("delivery_status", "Delivery Status", array(
 	"Delivered",
 	"Refunded",
 	"Cancelled"
-], {
-	defaultSelectedIndex: 1
-});
+), array(
+	"defaultSelectedIndex" => 1
+));
 ~~~
 
 This selects index `1` in the array. Note that since the array starts from 0, "Refunded" is selected by default.
@@ -83,12 +90,12 @@ This selects index `1` in the array. Note that since the array starts from 0, "R
 Multi select filters allow your users to select more than one option.
 
 ~~~
-filter.addMultiSelectFilter ("item_category", "Item Category", [
+$filter->addMultiSelectFilter ("item_category", "Item Category", array(
 	"Beverages",
 	"Condiments",
 	"Snacks",
 	"Groceries"
-]);
+));
 ~~~
 
 There are 3 parameters:
@@ -100,24 +107,24 @@ There are 3 parameters:
 By default, no options are selected. You can specify the defaults:
 
 ~~~
-filter.addMultiSelectFilter ("item_category", "Item Category", [
+$filter->addMultiSelectFilter ("item_category", "Item Category", array(
 	"Beverages",
 	"Condiments",
 	"Snacks",
 	"Groceries"
-], {
-	defaultSelectedOptions: [1, 2]
-});
+), array(
+	"defaultSelectedOptions" => array(1, 2)
+));
 ~~~
 
 This selects indices `1` and `2` in the array. Note that since the array starts from 0, "Condiments" and "Snacks" are selected.
 
 #### Date Filter
 
-A date filter allows your users to pick a single date, use the {{ linkApi("js", "FilterComponent", "addDateFilter") }} function.
+A date filter allows your users to pick a single date, use the {{ linkApi("php", "FilterComponent", "addDateFilter") }} function.
 
 ~~~
-filter.addDateFilter ("sale_date", "Sale Date");
+$filter->addDateFilter ("sale_date", "Sale Date");
 ~~~
 
 There are 2 parameters:
@@ -128,17 +135,17 @@ There are 2 parameters:
 By default, the current date is displayed. You can specify another date to be shown as default by passing a configuration object as an extra parameter.
 
 ~~~
-filter.addDateFilter ("sale_date", "Sale Date", {
-	defaultDate: "03-12-2013"
-});
+$filter->addDateFilter ("sale_date", "Sale Date", array(
+	"defaultDate" => "03-12-2013"
+));
 ~~~
 
 #### Date Range Filter
 
-A date range filter allows your users to select a range of dates by specifying a start and end date, use the {{ linkApi("js", "FilterComponent", "addDateRangeFilter") }} function.
+A date range filter allows your users to select a range of dates by specifying a start and end date, use the {{ linkApi("php", "FilterComponent", "addDateRangeFilter") }} function.
 
 ~~~
-filter.addDateFilter ("sale_period", "Sale Period");
+$filter->addDateFilter ("sale_period", "Sale Period");
 ~~~
 
 There are 2 parameters:
@@ -154,10 +161,10 @@ By default, the end date is the current date, and the start date is 1 month behi
 You can specify different defaults:
 
 ~~~
-filter.addDateFilter ("sale_date", "Sale Date", {
-	defaultStartDate: "03-12-2013",
-	defaultEndDate: "06-12-2013"
-});
+$filter->addDateFilter ("sale_date", "Sale Date", array(
+	"defaultStartDate" => "03-12-2013",
+	"defaultEndDate" => "06-12-2013"
+));
 ~~~
 
 If the default start date is not provided, the current date is used. If the default end date is not provided, the current date is used.
@@ -168,7 +175,7 @@ If the default start date is not provided, the current date is used. If the defa
 A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("js", "FilterComponent", "addNumericRangeFilter") }} function.
 
 ~~~
-filter.addDateFilter ("sale_amount", "Sale Amount", [0, 100]);
+$filter->addDateFilter ("sale_amount", "Sale Amount", array(0, 100));
 ~~~
 
 There are 3 parameters:
