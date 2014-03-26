@@ -2,7 +2,7 @@
 {
 	"title": "Getting Started with the filter component",
 	"subtitle": "",
-	"index": 0,
+	"index": 1,
 	"id": "php_filter_configure"
 }
 </meta>
