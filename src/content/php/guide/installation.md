@@ -21,7 +21,7 @@ Under most circumstances, installing RazorFlow is simple and will take under fiv
 
 ### Installing on a local computer for development
 
-1. [Download](https://razorflow.com/download) as a zip file.
+1. [Download](http://razorflow.com/download) as a zip file.
 2. Determine the Document Root. The Document Root is the folder on your computer, where all your web pages are located.
 3. Unzip the contents of the downloaded ZIP File somewhere inside your document root. A Single directory rf is created.
 4. If you extracted the rf folder in http://localhost/rf/, then run the installer at http://localhost/rf/php/install.php.
