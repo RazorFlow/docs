@@ -24,7 +24,7 @@ Under most circumstances, installing RazorFlow is simple and will take under fiv
 1. [Download](https://razorflow.com/download) as a zip file.
 2. Determine the Document Root. The Document Root is the folder on your computer, where all your web pages are located.
 3. Unzip the contents of the downloaded ZIP File somewhere inside your document root. A Single directory rf is created.
-4. If you extracted the rf folder in http://localhost/rf/, then run the installer at http://localhost/rf/src/install.php.
+4. If you extracted the rf folder in http://localhost/rf/, then run the installer at http://localhost/rf/php/install.php.
 5. Follow the instructions on the installation screen.
 
 ### Connecting to a Database
@@ -32,8 +32,11 @@ Under most circumstances, installing RazorFlow is simple and will take under fiv
 You can connect to Databases using RazorFlow. To access these databases from PHP, you need to install the PDO PHP Driver. On most PHP installations, the driver will be automatically installed. Otherwise, you can find instructions to install these drivers your the vendor’s website.
 
 ### Verifying Install is Successful
+
+<!--
 You can verify that the installation is successful by opening the sample dashboards bundled with RazorFlow. Open http://localhost/rf/demos/index.php in your browser, and click on any one of the demos.
 
 *Important*: You need to install a SQLite driver to view the demo dashboards. This is because the data is in a SQLite database.
 
 The type of the dashboard you are creating is called a "Standalone Dashboard". We will cover the different types of dashboards in a later article.
+-->
