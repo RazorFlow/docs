@@ -25,7 +25,7 @@ You will not need to modify your HTML in any way to enable a standalone dashboar
 After including `jquery.min.js`, `razorflow.min.js` and `razorflow.min.css` in your HTML page:
 
 ~~~
-rf.createStandaloneDashboard (function (db) {
+rf.StandaloneDashboard (function (db) {
 	// Add components to db
 
 
