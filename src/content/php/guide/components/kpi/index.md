@@ -1,6 +1,6 @@
 <meta>
 {
-	"title": "KPI And Gauge Component",
+	"title": "KPI Component",
 	"subtitle": "",
 	"id":"php_kpi_guide"
 }
