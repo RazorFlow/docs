@@ -7,7 +7,7 @@
 }
 </meta>
 
-You can execute a PHP function when an item on the chart has been clicked, by using the {{ linkApi("php", "Component", "onItemClicked") }} function. This function is executed whenever an item (like a line chart circle, column chart rectangle, etc.) is clicked.
+You can execute a PHP function when an item on the chart has been clicked, by using the {{ linkApi("php", "ChartComponent", "onItemClicked") }} function. This function is executed whenever an item (like a line chart circle, column chart rectangle, etc.) is clicked.
 
 ~~~
 $chart->onItemClicked (array($chart), "handleItemClick");

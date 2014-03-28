@@ -9,7 +9,7 @@
 
 ### Formatting the number
 
-You can format the number displayed in the KPI by passing an option to  the {{ linkApi("js", "KPIComponent", "setValue") }} function like this:
+You can format the number displayed in the KPI by passing an option to  the {{ linkApi("php", "KPIComponent", "setValue") }} function like this:
 
 ~~~
 $kpi->setValue (42, array(

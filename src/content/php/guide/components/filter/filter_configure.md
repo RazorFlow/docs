@@ -172,7 +172,7 @@ If the default start date is not provided, the current date is used. If the defa
 
 #### Numeric Range Filter
 
-A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("js", "FilterComponent", "addNumericRangeFilter") }} function.
+A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("php", "FilterComponent", "addNumericRangeFilter") }} function.
 
 ~~~
 $filter->addDateFilter ("sale_amount", "Sale Amount", array(0, 100));
