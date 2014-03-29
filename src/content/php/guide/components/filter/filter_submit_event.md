@@ -21,6 +21,7 @@ public function function_name($source, $target, $params){
   $table_obj = $this->getComponentByID("table_id");
   $table_obj->setCaption ("New Caption");
 }
+?>
 ~~~
 
 The `onApplyClicked` function takes the following parameters:
