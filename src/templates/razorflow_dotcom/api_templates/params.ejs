@@ -15,7 +15,23 @@
                             }) : param.paramType
                     %>
                 </td>
-                <td><%= param.desc %></td>
+                <td>
+                    <%= param.desc %>
+                    <% var param = findConstantsObject(param.paramType); 
+                        if(param) { %>
+                        <table class="table table-condensed"><thead><th>Name</th><th>Type</th><th>Description</th></thead>
+                        <tbody>
+                            <% for(var key in param) { %>
+                            <tr>
+                                <td><code><%= key %></code></td>
+                                <td><%= param[key].type %></td>
+                                <td><%= param[key].shortDesc %></td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                        </table>
+                    <% } %>
+                </td>
             </tr>
         <% } %>
     </tbody>
