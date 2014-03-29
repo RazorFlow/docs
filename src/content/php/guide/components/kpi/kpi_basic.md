@@ -21,7 +21,7 @@ $kpi->setDimensions (4, 4);
 The caption is the text that will be displayed on the KPI. You can set the caption using the {{ linkApi("php", "Component", "setCaption") }} function.
 
 ~~~
-$kpi->setCaption ("Sales");
+$kpi->setCaption ("Open Suport Tickets");
 ~~~
 
 ### Setting the current value
@@ -29,29 +29,11 @@ $kpi->setCaption ("Sales");
 You can show the current value of the KPI that will be displayed as a number using the {{ linkApi("php", "KPIComponent", "setValue") }} function.
 
 ~~~
-$kpi->setValue (42);
+$kpi->setValue (19);
 ~~~
 
 For more examples on using {{ linkApi("php", "KPIComponent", "setValue") }} and information on formatting the value, see "Customizing KPI Display Value"
 
 ### A Complete example
 
-~~~
-<?php
-
-class SampleDasboard extends StandaloneDashboard{
-  public function buildDashboard () {
-    $kpi = new KPIComponent("kpi1");
-    $kpi->setDimensions (4, 4);
-
-    $this->addComponent($kpi);
-  }
-}
-
-$db = new SampleDashboard();
-$db->renderStandalone();
-~~~
-
-
-
-
+{{ embedExample ('php', 'kpi0' )}}

@@ -24,6 +24,7 @@ class SampleDasboard extends StandaloneDashboard{
 
 $db = new SampleDashboard();
 $db->renderStandalone();
+?>
 ~~~
 
 ### Add form elements to filter component
@@ -184,6 +185,5 @@ There are 3 parameters:
 2. The label of the filter (`"Sale Amount"`)
 3. An array with 2 elements containing start and end amounts
 
-### What's next?
+{{ embedExample ('php', 'filter' )}}
 
-Learn to use the filter component to actually extract values.
