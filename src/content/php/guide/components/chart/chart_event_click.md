@@ -10,13 +10,29 @@
 You can execute a PHP function when an item on the chart has been clicked, by using the {{ linkApi("php", "ChartComponent", "onItemClicked") }} function. This function is executed whenever an item (like a line chart circle, column chart rectangle, etc.) is clicked.
 
 ~~~
-$chart->onItemClicked (array($chart), "handleItemClick");
+  public function buildDashboard(){
+    $chart = new ChartComponent("chart");
+    $chart->setCaption("Click Me");
+    $chart->setDimensions (4, 4);
+    $chart->setLabels (["2009", "2010", "2011"]);
+    $chart->addSeries ("beverages", "Beverages", [1355, 1916, 1150], array('numberPrefix' => '$'));
+    $chart->addSeries ("packaged_foods", "Packaged Foods", [1513, 976, 1321], array('numberPrefix' => '$'));
+    $this->addComponent ($chart);
 
-private function handleItemClick($source, $target, $params){
-  $chart = $this->getComponentByID("chart1");
-  echo "Chart Label: $params->label";
-  echo "Chart Value: $params->value";
-}
+    $kpi = new KPIComponent("kpi");
+    $kpi->setCaption("Click on the chart");
+    $kpi->setValue(0, array('numberPrefix' => '$'));
+    $kpi->setDimensions(4, 4);
+    $this->addComponent ($kpi);
+
+    $chart->onItemClicked (array($kpi), 'handleClick');
+  }
+
+  public function handleClick ($source, $targets, $params) {
+  	$kpi = $this->getComponentById ('kpi');
+  	$kpi->setCaption ("Year: ".$params['label']);
+  	$kpi->setValue ($params['value'], array('numberPrefix' => '$'));
+  }
 ~~~
 
 In your function, declare three arguments called `$source`, `$target` and `$params` The `$params` contains the  properties:
@@ -24,3 +40,5 @@ In your function, declare three arguments called `$source`, `$target` and `$para
 * **value**: The value of the item that was clicked (purely numeric, this will not contain formatted values like number prefix/suffix, etc)
 * **label**: The x-axis label that corresponds to the item that was clicked.
 * **labelIndex**: The index of the label (starting from 0) that corresponds to the item that was clicked.
+
+{{ embedExample ('php', 'chart_event') }}

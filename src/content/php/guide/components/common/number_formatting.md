@@ -3,7 +3,7 @@
 	"title": "Common component concepts",
 	"subtitle": "",
 	"id":"php_number_formatting",
-	"index": 1
+	"index": 0
 }
 </meta>
 

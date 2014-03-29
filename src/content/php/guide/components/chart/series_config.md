@@ -51,14 +51,6 @@ You can change the series color using the `seriesColor` property while adding a 
 ## Demo of series options
 
 ~~~
-<?php
-
-class SampleDasboard extends StandaloneDashboard{
-  public function buildDashboard () {
-    $chart = new ChartComponent("chart1");
-    $chart->setDimensions (4, 4);
-    $chart->setCaption ("My First Chart");
-    $chart->setLabels (array("Jan", "Feb", "Mar"));
     $chart->addSeries ("beverages", "Beverages", array(1355, 1916, 1150), array(
       "seriesDisplayType" => "line",
       "seriesColor" => "#a4c9f3" 
@@ -67,11 +59,7 @@ class SampleDasboard extends StandaloneDashboard{
       "numberPrefix" => "$ ",
       "numberForceDecimals" => true
     ));
-
-    $this->addComponent($chart);
-  }
-}
-
-$db = new SampleDashboard();
-$db->renderStandalone();
 ~~~
+
+{{ embedExample ('php', 'chart_series_config')}}
+

@@ -43,5 +43,5 @@ To create a pie chart, use the `setPieValues` function instead of `addSeries`. S
 
 ### Notes:
 
-* By default, all chart series are Column Charts. Changing the series type is covered in **Series Configuration**
+* By default, all chart series are Column Charts. Changing the series type is covered in {{ linkArticle ('series_config') }}
 * Please ensure that the number of data points in each series is the same number of items in  your Label Array.

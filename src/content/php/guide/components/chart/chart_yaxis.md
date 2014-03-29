@@ -16,7 +16,7 @@ To do this, you will need to use the {{ linkApi("php", "ChartComponent", "setYAx
 
 ~~~
     $chart->setYAxis("Sales", array(
-      "numberPrefix" => "$ "
+      "numberPrefix" => "$"
     ));
 ~~~
 
