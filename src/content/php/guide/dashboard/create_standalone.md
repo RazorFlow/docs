@@ -1,9 +1,29 @@
 <meta>
 {
-    "title": "Creating a dashboard",
+    "title": "Create a new dashboard",
     "id": "php_create_standalone",
-    "index": 0
+    "index": 1
 }
 </meta>
 
-## Standalone Dashboard
+To create a new dashboard you must first {{ linkArticle ('php_installation') }}. After that, the steps are:
+
+1. Create a new PHP file `yourdashboard.php` which is inside your document root.
+2. Add the following code to the dashboard:
+
+~~~
+<?php
+
+// You can rename the "MyDashboard" class to anything you want
+class MyDashboard extends StandaloneDashboard {
+	public function buildDashboard () {
+		// Build your dashboard here.
+	}
+}
+
+$dashboard = new MyDashboard ()
+$dashboard->renderStandalone ();
+?>
+~~~
+
+3. Open `yourdashboard.php` in your browser.

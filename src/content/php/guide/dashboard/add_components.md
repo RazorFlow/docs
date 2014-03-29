@@ -3,7 +3,7 @@
     "title": "Add components to your dashboard",
     "subtitle": "",
     "id": "php_add_components",
-    "index": 1
+    "index": 2
 }
 </meta>
 
@@ -15,19 +15,20 @@ A component object is an instance of a component class like {{ linkApi("php", "C
 $chart1 = new ChartComponent();
 ~~~
 
-here, `$chart1` is the component object. Calling functions on this `$chart1` object like `$chart1->setCaption` will only affect this component and not any other function.
+here, `$chart1` is the component object. Calling functions on this `$chart1` object like `$chart1->setCaption()` will only affect this component and not any other component.
 
 ### Adding components the dashboard
 
 Once you have created a dashboard, and configured the components, you can add components to the dashboard using `$this->addComponent`. So to summarize, the process is:
 
-1. Create a class that extends from StandaloneDashboard
-2. Implement the abastract function `buildDashboard`
-3. Add a component object inside the `buildDashboard` function
-4. Configure the component
-5. Use `addComponent` to add the component to the dash board.
-6. Create an object of the class that was defined
-7. Render the dashboard
+1. Create a new file.
+2. Create a class extending `StandaloneDashboard`
+3. Create a public function `buildDashboard`
+4. Add a component object inside the `buildDashboard` function
+5. Configure the component
+6. Use `addComponent` to add the component to the dash board.
+7. Create an object of the class that was defined
+8. Open the PHP page in your browser
 
 ~~~
 <?php
@@ -43,4 +44,5 @@ class SampleDasboard extends StandaloneDashboard{
 
 $db = new SampleDasboard();
 $db->renderStandalone();
+?>
 ~~~

@@ -1,22 +1,14 @@
 <meta>
 {
-    "title": "Installing PHP Dashboard Framework",
+    "title": "Install RazorFlow PHP Dashboard Framework",
     "id": "php_installation",
     "index": 0
 }
 </meta>
 
-### Things you need before installing Dashboards for PHP
-
-1. A web server running on Windows, or Linux, or OSX.
-   
-   If you don't have a web server installed, RazorFlow highly recommends XAMPP which is available for Windows, Linux and OSX. RazorFlow officially supports Apache 2 at this time of writing. Instructions for other web servers including IIS, nginx, lighttpd, Cherokee will be added soon.
-
-2. PHP 5.3 (or above) installed and configured on your web server. 
-
-### Installing on a local computer for development
-
 1. [Download](http://razorflow.com/download/) as a zip file.
-2. Determine the Document Root. The Document Root is the folder on your computer, where all your web pages are located.
-3. Unzip the contents of the downloaded ZIP File somewhere inside your document root. A Single directory rf is created.
+2. Determine the Document Root/Web Root. The Document Root is the folder on your computer, where all your web pages are located.
+3. Unzip the contents of the downloaded zip file. You will find a folder called `razorflow_php`, copy that folder to some location on your document root.
+4. Open `http://your_server.name/path/to/razorflow_php/install.php` in your browser.
+5. Follow the instructions in that page to install the RazorFlow PHP Dashboard Framework into that folder.
 
