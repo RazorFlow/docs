@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <ul class="nav">
+                <ul id="docTree">
                     <%- articleNav %>
                     <%- apiNav %>
                 </ul>
@@ -21,7 +21,7 @@
     <script type="text/javascript">
   $(function(){
     window.tv = $("#docTree").kendoTreeView ().data('kendoTreeView');
-    var root = window.tv.findByText("<%= currentClass %>");
+    var root = $('li[data-lang=<%= lang %>] li[data-class=<%= currentClass %>]');
     window.tv.select(root);
     var rootParent = window.tv.parent(root);
     
