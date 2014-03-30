@@ -41,7 +41,8 @@
 <script type="text/javascript">
   $(function(){
     window.tv = $("#docTree").kendoTreeView ().data('kendoTreeView');
-    var root = window.tv.findByText("<%= title %>");
+    // var root = window.tv.findByText("<%= title %>");
+    var root = $('li[data-id=<%= id %>]');
     window.tv.select(root);
     var rootParent = window.tv.parent(root);
     
