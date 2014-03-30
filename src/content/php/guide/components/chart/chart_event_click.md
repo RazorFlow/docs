@@ -7,7 +7,7 @@
 }
 </meta>
 
-You can execute a PHP function when an item on the chart has been clicked, by using the {{ linkApi("php", "ChartComponent", "onItemClicked") }} function. This function is executed whenever an item (like a line chart circle, column chart rectangle, etc.) is clicked.
+You can execute a PHP function when an item on the chart has been clicked, by using the {{ linkApi("php", "ChartComponent", "onItemClick") }} function. This function is executed whenever an item (like a line chart circle, column chart rectangle, etc.) is clicked.
 
 ~~~
   public function buildDashboard(){
@@ -25,7 +25,7 @@ You can execute a PHP function when an item on the chart has been clicked, by us
     $kpi->setDimensions(4, 4);
     $this->addComponent ($kpi);
 
-    $chart->onItemClicked (array($kpi), 'handleClick');
+    $chart->onItemClick (array($kpi), 'handleClick');
   }
 
   public function handleClick ($source, $targets, $params) {

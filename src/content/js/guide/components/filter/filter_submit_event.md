@@ -7,10 +7,10 @@
 }
 </meta>
 
-You can execute a JavaScript callback when the "Apply" button on the filter has been clicked, by using the `onApplyClicked` function. This callback gives you all the data in an easy to use form.
+You can execute a JavaScript callback when the "Apply" button on the filter has been clicked, by using the `onApplyClick` function. This callback gives you all the data in an easy to use form.
 
 ~~~
-filter_object.onApplyClicked (function(params) {
+filter_object.onApplyClick (function(params) {
 	// params.values contains the values of all the filter items
 	console.log ("The parameters are ", params.values);
 });

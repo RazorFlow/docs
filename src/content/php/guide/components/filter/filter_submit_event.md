@@ -7,12 +7,12 @@
 }
 </meta>
 
-You can execute a PHP function when the "Apply" button on the filter has been clicked, by using the `onApplyClicked` function. This callback gives you all the data in an easy to use form.
+You can execute a PHP function when the "Apply" button on the filter has been clicked, by using the `onApplyClick` function. This callback gives you all the data in an easy to use form.
 
 ~~~
 
 public function buildDashboard(){
-  $filter_obj->onApplyClicked (array($table_obj, "some_function"));
+  $filter_obj->onApplyClick (array($table_obj, "some_function"));
 }
 
 public function some_function($source, $target, $params){
@@ -23,6 +23,6 @@ public function some_function($source, $target, $params){
 
 ~~~
 
-The `onApplyClicked` function takes the following parameters:
+The `onApplyClick` function takes the following parameters:
 * Array of components to be locked.
 * The function name that gets executed when the *Apply* button gets clicked.
