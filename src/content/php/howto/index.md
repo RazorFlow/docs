@@ -6,7 +6,9 @@
 }
 </meta>
 
-## Server-side integration
+## Working with databases
 
-* {{ linkArticle ("php_index") }}
-* {{ linkArticle ("php_installation") }}
+* {{ linkArticle ('php_sql_simple')}}
+
+
+

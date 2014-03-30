@@ -73,6 +73,7 @@ while($row = $res->fetch_assoc()) {
 
 header("Content-Type: application/json");
 echo json_encode($all_rows);
+?>
 ~~~
 
 In this file, we are doing the following things:
