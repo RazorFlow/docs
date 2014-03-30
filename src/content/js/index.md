@@ -1,7 +1,8 @@
 <meta>
 {
-	"title": "RazorFlow JS Documentation",
-	"subtitle": ""
+	"title": "Dashboards with JavaScript",
+	"subtitle": "",
+  "id": "js_doc_root"
 }
 </meta>
 <div class="well">

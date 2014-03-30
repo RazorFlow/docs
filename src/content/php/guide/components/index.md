@@ -1,7 +1,8 @@
 <meta>
 {
 	"title": "Component Guide",
-	"subtitle": ""
+	"subtitle": "",
+	"id": "php_component_index"
 }
 </meta>
 

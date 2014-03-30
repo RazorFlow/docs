@@ -1,7 +1,8 @@
 <meta>
 {
 	"title": "Guide",
-	"subtitle": ""
+	"subtitle": "",
+	"id": "php_guide_index"
 }
 </meta>
 

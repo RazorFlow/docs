@@ -1,7 +1,8 @@
 <meta>
 {
-	"title": "RazorFlow PHP Documentation",
-	"subtitle": ""
+	"title": "Dashboards with PHP",
+	"subtitle": "",
+  "id": "php_doc_root"
 }
 </meta>
 <div class="well">
