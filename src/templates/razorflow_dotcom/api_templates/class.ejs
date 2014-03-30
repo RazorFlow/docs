@@ -1,6 +1,6 @@
-<h2>Class <%= item.class.name %></h2>
+<h1>Class <%= item.class.name %></h1>
 
-<h3><%= item.signature %></h3>
+<h4><%= item.signature %></h4>
 
 <% if(item.augments) { %>
     <p>inherits from 
@@ -13,12 +13,11 @@
         %>
     </p>
 <% } %>
-<h2>Params</h2>
 <% if(item.params) { %>
 <%- render('params.ejs', {tree: tree, params: item.params}) %>
 <% } %>
-<h2>Examples</h2>
 <% if(item.example) { %>
+<h2>Examples</h2>
 <pre><code><%= item.example.code %></code></pre>
 <% } %>
 <h2>Methods</h2>

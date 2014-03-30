@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-condensed rfParamsTable">
     <tbody>
         <% for(i=0; i<params.length; i++) {
             var param = params[i];
@@ -19,7 +19,7 @@
                     <%= param.desc %>
                     <% var param = findConstantsObject(param.paramType); 
                         if(param) { %>
-                        <table class="table table-condensed"><thead><th>Name</th><th>Type</th><th>Description</th></thead>
+                        <table class="table table-condensed rfParamsTable"><thead><th>Name</th><th>Type</th><th>Description</th></thead>
                         <tbody>
                             <% for(var key in param) { %>
                             <tr>
