@@ -1,6 +1,6 @@
 <meta>
 {
-    "title": "Documentation Home",
+    "title": "Documentation",
     "subtitle": "",
     "index": 0,
     "id": "doc_root"
@@ -13,7 +13,7 @@
 	<div class="well">
 		<h3>Build dashboards with JavaScript</h3>
 		<p>Build immersive, interactive dashboards using JavaScript which gives you fine grained control and works with just about any server technology out there.</p>
-		<a class="btn btn-large btn-primary" href="/docs/dashboard/php/">Get Started</a>
+		<a class="btn btn-large btn-primary" href="/docs/dashboard/js/">Get Started</a>
 	</div>
 	</div>
 	<div class="col-md-4">

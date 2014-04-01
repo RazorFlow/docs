@@ -8,8 +8,8 @@
 
 To create a new dashboard you must first {{ linkArticle ('php_installation') }}. After that, the steps are:
 
-1. Create a new PHP file `yourdashboard.php` which is inside your document root.
-2. Add the following code to the dashboard:
+1. Create a new PHP file `yourdashboard.php` which is inside your document root (you can change this file to anything).
+2. Add the following code to the dashboard (You can rename `MyDashboard` to any name you like):
 
 ~~~
 <?php

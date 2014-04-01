@@ -26,7 +26,7 @@ You can update a chart's data anytime after it's rendered using the {{ linkApi("
 $chart->updateSeries ("series_1", array(3, 5, 2);
 ~~~
 
-### Full Example
+### Complete Example
 
 {{ embedExample ('php', 'chart_updatevals') }}
 
@@ -48,6 +48,6 @@ If you are re-drawing new data on the chart, you will need to first clear out th
   }
 ~~~
 
-### Full Example
+### Complete Example
 
 {{ embedExample ('php', 'chart_updatechart') }}

@@ -9,7 +9,7 @@
 ### Create a dashboard from the included dashboard template
 
 1. Download RazorFlow, which is a ZIP file and extract it on your computer.
-2. In the extracted directory, locate a folder called `dashboard_quickstart`.
+2. In the `razorflow_js` extracted directory, locate a folder called `dashboard_quickstart`.
 3. Make a copy of this folder somewhere else and rename it as required.
 4. Open `index.html` inside your browser.
 5. Open the `dashboard.js` inside your text editor.

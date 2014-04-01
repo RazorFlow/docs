@@ -1,6 +1,6 @@
 <meta>
 {
-	"title": "Common component concepts",
+	"title": "Number Formatting",
 	"subtitle": "",
 	"id":"number_formatting",
 	"index": 1

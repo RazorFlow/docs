@@ -2,7 +2,8 @@
 {
   "title": "A simple SQL Dashboard with PHP",
   "subtitle": "",
-  "id": "php_sql_simple"
+  "id": "php_sql_simple",
+  "index": 0
 }
 </meta>
 

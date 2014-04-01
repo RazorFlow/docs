@@ -1,7 +1,8 @@
 <meta>
 {
 	"title": "Component Guide",
-	"subtitle": ""
+	"subtitle": "",
+	"id": "components_index"
 }
 </meta>
 

@@ -2,7 +2,8 @@
 {
   "title": "A basic interactive PHP Dashboard example",
   "subtitle": "",
-  "id": "php_simple"
+  "id": "php_simple",
+  "index": 0
 }
 </meta>
 

@@ -13,7 +13,7 @@ Here is the code for a complete dashboard containing a single chart component:
 ~~~
 <?php
 
-class SampleDasboard extends StandaloneDashboard{
+class SampleDashboard extends StandaloneDashboard{
   public function buildDashboard () {
     $chart = new ChartComponent("chart1");
     $chart->setDimensions (4, 4);

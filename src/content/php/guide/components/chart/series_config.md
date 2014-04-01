@@ -48,18 +48,7 @@ You can change the series color using the `seriesColor` property while adding a 
     ));
 ~~~
 
-## Demo of series options
-
-~~~
-    $chart->addSeries ("beverages", "Beverages", array(1355, 1916, 1150), array(
-      "seriesDisplayType" => "line",
-      "seriesColor" => "#a4c9f3" 
-    ));
-    $chart->addSeries ("packaged_foods", "Packaged Foods", array(1513, 976, 1321), array(
-      "numberPrefix" => "$ ",
-      "numberForceDecimals" => true
-    ));
-~~~
+## Complete example
 
 {{ embedExample ('php', 'chart_series_config')}}
 
