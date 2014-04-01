@@ -25,11 +25,11 @@ rf.StandaloneDashboard(function(db){
 The steps taken to build this dashboard are:
 
 1. Create an empty dashboard
-2. Add a new component instance of type **ChartComponent**
+2. Add a new component instance of type {{ linkApi ('js', 'ChartComponent', '') }}
 3. Set the **Component Dimensions** as 4x4
 4. Set a **caption** to the component.
-5. Set the labels (which are shown on the X-Axis) using the **setLabels** function, pass an array of strings which will be displayed.
-6. Add multiple series to the chart, using the **addSeries** function which takes 3 arguments:
+5. Set the labels (which are shown on the X-Axis) using the {{ linkApi ('js', 'ChartComponent', 'setLabels') }} function, pass an array of strings which will be displayed.
+6. Add multiple series to the chart, using the {{ linkApi ('js', 'ChartComponent', 'addSeries') }} function which takes 3 arguments:
    * An **ID String** (`beverages`, `packaged_foods`, etc) which is used later to refer to this series to update it, etc.
    * The **Title** of the series, which will be displayed on the chart.
    * An array of **Data Values** which will be the actual values plotted on the chart.
@@ -37,7 +37,7 @@ The steps taken to build this dashboard are:
 
 ## Pie Charts
 
-To create a pie chart, use the `setPieValues` function instead of `addSeries`. Since a pie chart can only have a single set of values, you can call this function only once.
+To create a pie chart, use the {{ linkApi('js', 'ChartComponent', 'setPieValues') }} function instead of {{ linkApi ('js', 'ChartComponent', 'addSeries') }}. Since a pie chart can only have a single set of values, you can call this function only once.
 
 <%- embedExample ('js', 'chart_pie') %>
 

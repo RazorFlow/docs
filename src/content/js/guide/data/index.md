@@ -11,6 +11,6 @@ RazorFlow Dashboard Framework is designed to be data source agnostic. This means
 
 Basics:
 
-* {{ linkArticle ("lock_and_resume") }}
+* {{ linkArticle ("lock_and_unlock") }}
 * {{ linkArticle ("dashboard_first") }}
 * {{ linkArticle ("prefetch_data") }}

@@ -7,7 +7,7 @@
 }
 </meta>
 
-You can execute a PHP function when the "Apply" button on the filter has been clicked, by using the `onApplyClick` function. This callback gives you all the data in an easy to use form.
+You can execute a PHP function when the "Apply" button on the filter has been clicked, by using the {{ linkApi ('php', 'FilterComponent', 'onApplyClick') }} function. This callback gives you all the data in an easy to use form.
 
 ~~~
 
@@ -23,6 +23,6 @@ public function some_function($source, $target, $params){
 
 ~~~
 
-The `onApplyClick` function takes the following parameters:
+The {{ linkApi ('php', 'FilterComponent', 'onApplyClick') }} function takes the following parameters:
 * Array of components to be locked.
 * The function name that gets executed when the *Apply* button gets clicked.

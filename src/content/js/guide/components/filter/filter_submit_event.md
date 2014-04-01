@@ -7,7 +7,7 @@
 }
 </meta>
 
-You can execute a JavaScript callback when the "Apply" button on the filter has been clicked, by using the `onApplyClick` function. This callback gives you all the data in an easy to use form.
+You can execute a JavaScript callback when the "Apply" button on the filter has been clicked, by using the {{ linkApi ('js', 'FilterComponent', 'onApplyClick') }} function. This callback gives you all the data in an easy to use form.
 
 ~~~
 filter_object.onApplyClick (function(params) {
@@ -16,4 +16,4 @@ filter_object.onApplyClick (function(params) {
 });
 ~~~
 
-The format of `params.values` is similar to what you get when you call `getAllInputValues` , and the format is described in detail at {{ ref("getAllInputValues") }}
+The format of `params.values` is similar to what you get when you call {{ linkApi("js", "FilterComponent", "getInputValue") }}, and the format is described in detail at {{ ref("getAllInputValues") }}
