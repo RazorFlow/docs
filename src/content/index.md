@@ -10,7 +10,7 @@
 <div class="container">
 <div class="row">
     <div class="col-md-8">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <img src="../../static/images/js.jpg" class="jsLogo" />
     </div>
      <div class="col-md-8">
@@ -20,7 +20,7 @@
     </div>
     </div>
     <div class="col-md-8 phpContainer">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <img src="../../static/images/php.png" class="phpLogo" />
     </div>
      <div class="col-md-8">
