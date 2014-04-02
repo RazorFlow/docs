@@ -10,9 +10,9 @@
 To display data in a dashboard you must first fetch it from a web server by using a HTTP AJAX request. Once the data has been fetched, you can use the RazorFlow Dashboard Framework API to define and build the dashboard. The summarized steps for this are:
 
 1. Create an empty dashboard.
-2. Add the components to display on the dashboard. If the data for the components are not yet available, use the `lock` function to display a "Loading" indicator and the dashboard will wait for you to make the data available.
+2. Add the components to display on the dashboard. If the data for the components are not yet available, use the {{ linkApi ('js', 'Component', 'lock') }} function to display a "Loading" indicator and the dashboard will wait for you to make the data available.
 3. Make AJAX calls to retrieve the data from your web server. Make sure your server returns JSON.
-4. Once the data is available, use the appropriate functions to set the data for the components and use the `resume` function to display the data.
+4. Once the data is available, use the appropriate functions to set the data for the components and use the {{ linkApi ('js', 'Component', 'unlock') }} function to display the data.
 
 ### Where to fetch the data from?
 
@@ -66,5 +66,5 @@ What just happened here?
 5. An AJAX request was started to "/data/get_sales_data.php?year=2014".
 6. In the meantime, the dashboard was processed and displayed in the browser with the chart as a "loading" spiner.
 7. After a little time, your AJAX request is complete, and the success function is called.
-8. Now, you set the labels and series using the `setLabels` and `addSeries` functions.
-9. After the component is ready to be displayed, you call the `unlock` function to remove the loading spinner and display the component.
+8. Now, you set the labels and series using the {{ linkApi ('js', 'ChartComponent', 'setLabels') }} and {{ linkApi ('js', 'ChartComponent', 'addSeries') }} functions.
+9. After the component is ready to be displayed, you call the {{ linkApi ('js', 'ChartComponent', 'unlock') }} function to remove the loading spinner and display the component.
