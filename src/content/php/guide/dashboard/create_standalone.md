@@ -14,7 +14,7 @@ To create a new dashboard you must first {{ linkArticle ('php_installation') }}.
 ~~~
 <?php
 // Require the RazorFlow php wrapper
-require('razorflow.php');
+require('path/to/razorflow.php');
 // You can rename the "MyDashboard" class to anything you want
 class MyDashboard extends StandaloneDashboard {
 	public function buildDashboard () {
