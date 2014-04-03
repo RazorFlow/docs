@@ -32,7 +32,7 @@ Once you have created a dashboard, and configured the components, you can add co
 
 ~~~
 <?php
-
+require('razorflow.php');
 class SampleDasboard extends StandaloneDashboard{
   public function buildDashboard(){
     $chart = new ChartComponent("chart_1");
