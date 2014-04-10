@@ -89,7 +89,7 @@ Now let's add a function to perform the query:
   }
 ~~~
 
-In this code, we use a utility function provided inside the framework called pluck <!-- {{ linkApi ('php', "ArrayUtils", "pluck")}} -->.
+In this code, we use a utility function provided inside the framework called {{ linkApi ('php', "ArrayUtils", "pluck")}}.
 
 ### Add functions to fetch the top albums
 
