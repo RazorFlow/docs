@@ -11,3 +11,4 @@ RazorFlow provides a simple wrapper that needs to be included in your custom lib
 
 * {{ linkArticle ('php_mvc_frameworks_codeigniter')}}
 * {{ linkArticle ('php_mvc_frameworks_cakephp')}}
+* {{ linkArticle ('php_mvc_frameworks_laravel')}}
