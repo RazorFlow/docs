@@ -9,8 +9,8 @@
 
 ## See a live demo of this example
 
-* [http://examples.razorflow.com/dashboard/php/examples/sql0](See the full dashboard in action)
-* [https://github.com/RazorFlow/examples/blob/master/src/php/examples/sql0.php](View the full code on github)
+* [See the full dashboard in action](http://examples.razorflow.com/dashboard/php/examples/sql0)
+* [View the full code on github](https://github.com/RazorFlow/examples/blob/master/src/php/examples/sql0.php)
 
 ## Steps to build this dashboard
 
@@ -32,7 +32,7 @@ $db->renderStandalone();
 
 ### Add an "initialize" function
 
-The `initialize` function in a dashboard is called before any action on the dashboard is executed. We use this to open a connection to a SQLite Database. In this example, we will be using a SQLite database. SQLite is a database with a syntax similar to MySQL but the entire database is stored as a file. The SQLite database that we are using is freely available to download from [http://chinookdatabase.codeplex.com/](Chinook Database Homepage).
+The `initialize` function in a dashboard is called before any action on the dashboard is executed. We use this to open a connection to a SQLite Database. In this example, we will be using a SQLite database. SQLite is a database with a syntax similar to MySQL but the entire database is stored as a file. The SQLite database that we are using is freely available to download from [Chinook Database Homepage](http://chinookdatabase.codeplex.com/).
 
 ~~~
   protected $pdo;
@@ -134,7 +134,7 @@ We can modify the `getTopAlbums` function to filter out the top albums by only a
   }
 ~~~
 
-This way, if `$artistName` is set to a string, it goes and fetches the data. Note that we're using [http://www.php.net/manual/en/pdostatement.execute.php](PDOStatement::execute) to fetch the data using prepared queries to protect from SQL Injection.
+This way, if `$artistName` is set to a string, it goes and fetches the data. Note that we're using [PDOStatement::execute](http://www.php.net/manual/en/pdostatement.execute.php) to fetch the data using prepared queries to protect from SQL Injection.
 
 ### Create an event listener
 
