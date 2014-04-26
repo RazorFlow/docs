@@ -1,4 +1,33 @@
-<%= title %>
+<?php 
+function custom_title () {
+    return "<%= title %>";
+}
+
+function rf_topbar () {
+    return array (
+        'url' => '/docs/dashboard/',
+        'title' => 'RazorFlow Documentation'
+    );
+}
+
+
+function extra_scripts () {
+  return array(
+    'vendor/kendo.custom.min.js',
+    'vendor/prism.min.js'
+  );
+}
+
+function extra_styles () {
+  return array(
+    'vendor/kendo.common.min.css',
+    'vendor/prism.css',
+    'vendor/kendo.bootstrap.min.css'
+  );
+}
+
+require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
+?>
 <div class="container">
   <div class="row">
     <ol class="breadcrumb rfTocBreadcrumb">
@@ -56,3 +85,7 @@
 
   })
 </script>
+
+<?php
+require $_SERVER['DOCUMENT_ROOT']."/layout/footer.php";
+
