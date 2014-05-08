@@ -44,3 +44,8 @@
 %>
 
 
+<% if(item.boundEvents) { %>
+    <h2>Bound Events</h2>
+    <%- render('boundevent.ejs', {tree: tree, boundevents: item.boundEvents}) %>
+<% } %>
+    
