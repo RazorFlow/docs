@@ -46,6 +46,10 @@
 
 <% if(item.boundEvents) { %>
     <h2>Bound Events</h2>
+    <% var inheritedClass = tree.findNodeByClassName(item.augments.name) %>
+    <% if(inheritedClass && inheritedClass.boundEvents) { %>
+        <%- render('boundevent.ejs', {tree: tree, boundevents: inheritedClass.boundEvents}) %>
+    <% } %>
     <%- render('boundevent.ejs', {tree: tree, boundevents: item.boundEvents}) %>
 <% } %>
     
