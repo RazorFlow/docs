@@ -13,13 +13,15 @@ function rf_topbar () {
 function extra_scripts () {
   return array(
     'vendor/kendo.custom.min.js',
-    'vendor/prism.min.js'
+    'vendor/prism.min.js',
+    'js/rfDocs.js'
   );
 }
 
 function extra_styles () {
   return array(
     'vendor/kendo.common.min.css',
+    'vendor/prism.css',
     'vendor/kendo.bootstrap.min.css'
   );
 }
@@ -28,7 +30,7 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
 ?>
     <div class="container">
         <div class="row">
-            <div class="col-md-3" >
+            <div class="col-md-3">
                 <ul id="docTree">
                     <%- articleNav %>
                     <%- apiNav %>
@@ -46,24 +48,10 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-  $(function(){
-    window.tv = $("#docTree").kendoTreeView ().data('kendoTreeView');
-    var root = $('li[data-lang=<%= lang %>] li[data-class=<%= currentClass %>]');
-    window.tv.select(root);
-    var rootParent = window.tv.parent(root);
-    
-    for(var i = 0; i < 20; i ++) {if (rootParent.length == 0) { break; } root = rootParent; window.tv.expand(root); rootParent = window.tv.parent(root); }
-    $('pre').addClass('language-javascript');
-    Prism.highlightAll();
-    $('.zoom').on('click', function() {
-      $(this).parent().find('.zoommodal').modal('show');
-    })
-    $('.live').on('click', function() {
-      $(this).parent().find('.livemodal').modal('show');
-    })
-  })
-  </script>
+<script type="text/javascript">
+window.doc_is_class = true;
+window.doc_id = "<%= currentClass %>";
+</script>
 <?php
 require $_SERVER['DOCUMENT_ROOT']."/layout/footer.php";
 
