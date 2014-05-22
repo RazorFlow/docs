@@ -20,22 +20,46 @@
 
   class Rf {
 
+    private $dashboards_path;
+    private $filename;
+
+    public function __construct() {
+      /**
+        * Edit this path to the location from where your dashboards will be loaded. 
+        * For Eg., If you would like to store all your dashboard files in applcation/rfDashboards, you can specify it as:
+        * $this->dashboards_path = APPPATH . 'rfDashboards/';
+        */
+
+      $this->dashboards_path = '';
+    }
+
+    public function requireFile($file) {
+      $this->filename = $this->dashboards_path . $file . ".php";
+      return $this;
+    }
+
     public function loadDashboard ($className) {
-      $this->requireDashboardFile($className);
+      $this->requireDashboardFile();
       $db = new $className();
 
       return $db;
     }
 
-    private function requireDashboardFile ($file) {
-      $filename = APPPATH . "rfDashboards/" . $file . ".php";
-      require($filename);
+    public function loadTabbedDashboard ($dashboards = array()) {
+      $tabbed = new TabbedDashboard ();
+      foreach($dashboards as $db) {
+        $tabbed->addDashboardTab ($db);
+      }
+
+      return $tabbed;
+    }
+
+    private function requireDashboardFile() {
+      require $this->filename;
     }
 
   }
   ~~~
-* Create a directory called `rfDashboards` in the `application/` directory. This contains all your dashbboard files.
-* Note that, the dashboard's classname and filename must match. i.e., If you would like to load a dashboard called `SampleDashboard`, then the filename must be called: `SampleDashboard.php`
 
 You will have to load the RazorFlow wrapper for CodeIgniter.
 To load the library use: `$this->load->library('rf')`
@@ -46,8 +70,13 @@ In order to load a Standalone Dashboard do the following:
 ~~~
 $this->load->library('rf');
 
-$db = $this->rf->loadDashboard('<dashboardClassname>');
+$db = $this->rf->requireFile('<dashboard_filename>')->loadDashboard('<dashboard_classname>');
 $db->renderStandalone();
+
+/**
+  * <dashboard_filename>: The filename without the extension
+  * <dashboard_classname>: The classname of your dashboard
+  */
 ~~~
 
 ### Example Code to render Embedded Dashboard
@@ -56,7 +85,7 @@ In order to load a Embedded Dashboard do the following:
 ~~~
 $this->load->library('rf');
 
-$db_embed = $this->rf->loadDashboard('<dashboardClassname>');
+$db_embed = $this->rf->requireFile('<dashboard_filename>')->loadDashboard('<dashboard_classname>');
 $data = array(
   "db" => $db_embed
 );
