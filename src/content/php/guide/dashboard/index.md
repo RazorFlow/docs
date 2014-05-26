@@ -10,5 +10,6 @@
 
 * {{ linkArticle("php_installation") }}
 * {{ linkArticle("php_create_standalone") }}
+* {{ linkArticle("php_create_embed") }}
 * {{ linkArticle("php_add_components") }}
 * {{ linkArticle("php_arrange_components") }}
