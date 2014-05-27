@@ -2,7 +2,7 @@
 {
     "title": "Embedding a dashboard",
     "id": "js_create_embedded",
-    "index": 0
+    "index": 5
 }
 </meta>
 
@@ -11,7 +11,7 @@
 
 You can embed the dashboard into an existing application. In this situation the dashboard is directly embedded and integrated as part of your page, not as an IFrame, allowing you to control and integrate your dashboard and control it using external controls.
 
-For example, you can see an example of an embedded dashboard here: [examples.razorflow.com/apps/html_embedded/](examples.razorflow.com/apps/html_embedded/). 
+For example, you can see an example of an embedded dashboard here: [examples.razorflow.com/apps/html_embedded/](http://examples.razorflow.com/apps/html_embedded/). 
 
 ### Steps to embed a dashboard
 

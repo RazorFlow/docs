@@ -13,3 +13,4 @@
 * {{ linkArticle("arrange_components") }}
 * {{ linkArticle("standalone_vs_embedded") }}
 * {{ linkArticle ("webframework_standalone") }}
+* {{ linkArticle ("js_create_embedded") }}
