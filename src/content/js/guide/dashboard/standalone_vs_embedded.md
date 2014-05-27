@@ -35,4 +35,6 @@ rf.StandaloneDashboard (function (db) {
 
 ## What is an embedded dashboard?
 
-An embedded dashboard can be inserted into an existing page by use of a div. Embedded dashboards are still unstable and will be fully available in the next release of RazorFlow Dashboard Framework.
+You can embed the dashboard into an existing application. In this situation the dashboard is directly embedded and integrated as part of your page, not as an IFrame, allowing you to control and integrate your dashboard and control it using external controls.
+
+To learn more on how to create an embedded dashboard, see {{ linkArticle ('js_create_embedded' )}}

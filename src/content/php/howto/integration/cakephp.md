@@ -16,6 +16,8 @@ You can find the final dashboard that we will be building over here:
 
 ### Set up the project
 
+Before you begin please ensure that you've understood the process of how to {{ linkArticle ('php_create_embed')}};
+
 1. Install and set up a CakePHP Project.
 2. copy the `razorflow_php` folder into the `app/Vendor` folder of your project. There should now be a file: `app/Vendor/razorflow_php/razorflow.php`
 3. (If you want to use CakePHP's asset loader), copy `razorflow.min.wrapper.js` from the download package into `app/webroot/js/` and `razorflow.min.css` to `app/webroot/css/` and the image files to `app/webroot/img`.
@@ -123,5 +125,4 @@ Here's what is happening with this code:
 1. There's a `dashboardAction` cakephp action, which is the PHP action which handles all the interactivity.
 2. You're using `$db->setActionPath` to set the action path of the dashboard to the Absolute URL which would end up in the dashboard action.
 3. In the `dashboardAction` function, we create a new instance of SalesDashboard and check the `getJSONForAction` to get the response JSON. And this response is sent back as a `CakeResponse` which sets the appropriate headers and everything.
-
 

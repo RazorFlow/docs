@@ -10,7 +10,7 @@
 
 You can embed the dashboard into an existing application. In this situation the dashboard is directly embedded and integrated as part of your page. This allows you to add a dashboard into an existing application.
 
-For example, you can see an example of an embedded dashboard here: [examples.razorflow.com/apps/php_embedded/](examples.razorflow.com/apps/php_embedded/). Note that the 
+For example, you can see an example of an embedded dashboard here: [examples.razorflow.com/apps/php_embedded/](examples.razorflow.com/apps/php_embedded/).
 
 The steps to embed a dashboard into your applications are:
 
@@ -160,4 +160,3 @@ Now, if you click on the first chart it will show a change in the second chart.
 ### Related Articles
 
 * {{ linkArticle ('php_cakephp') }}
-
