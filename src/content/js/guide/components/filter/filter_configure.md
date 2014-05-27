@@ -168,14 +168,17 @@ If the default start date is not provided, the current date is used. If the defa
 A numeric range filter allows your users to select a range of numbers by specifying a start and end values, use the {{ linkApi("js", "FilterComponent", "addNumericRangeFilter") }} function.
 
 ~~~
-filter.addDateFilter ("sale_amount", "Sale Amount", [0, 100]);
+filter.addNumericRangeFilter ("sale_amount", "Sale Amount", [0, 100], {
+	smallStep: 1
+});
 ~~~
 
-There are 3 parameters:
+There are 4 parameters:
 
 1. The key of the filter (`"sale_amount"`).
 2. The label of the filter (`"Sale Amount"`)
 3. An array with 2 elements containing start and end amounts
+4. The options consist of 1 option called `smallStep` which indicates the number of step on each drag. This defaults to 1.
 
 ### What's next?
 
