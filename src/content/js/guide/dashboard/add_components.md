@@ -18,7 +18,7 @@ var chart1 = new ChartComponent();
 
 here, `chart1` is the component object. Calling functions on this `chart1` object like `chart1.setCaption` will only affect this component and not any other function.
 
-### Adding components the dashboard
+### Adding components to the dashboard
 
 Once you have created a dashboard, and configured the components, you can add components to the dashboard using `db.addComponent`. So to summarize, the process is:
 
