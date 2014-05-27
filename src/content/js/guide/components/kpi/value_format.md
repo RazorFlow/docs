@@ -21,10 +21,10 @@ All the standard number formatting features are available. For a full list of av
 
 ### Changing the color of the text
 
-You can change the color ofhat the KPI is displayed by setting the `kpiTextColor` parameter
+You can change the value color of the KPI that is displayed by setting the `valueTextColor` parameter
 
 ~~~
 kpi.setValue (42, {
-	kpiTextColor: "red"
-})
+	valueTextColor: "red"
+});
 ~~~

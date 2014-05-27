@@ -19,6 +19,16 @@ $kpi->setValue (19136, array(
 
 All the standard number formatting features are available. For a full list of available parameters and examples with their usage, see "Number formatting in razorflow"
 
+### Changing the color of the text
+
+You can change the value color of the KPI that is displayed by setting the `valueTextColor` parameter
+
+~~~
+$kpi->setValue (42, array(
+	"valueTextColor" => "red"
+));
+~~~
+
 ### A Complete example
 
 {{ embedExample ('php', 'kpi1' )}}
