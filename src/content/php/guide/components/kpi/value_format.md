@@ -25,7 +25,7 @@ You can change the value color of the KPI that is displayed by setting the `valu
 
 ~~~
 $kpi->setValue (42, array(
-	"valueTextColor" => "red"
+	"valueTextColor" => "#ff0000"
 ));
 ~~~
 

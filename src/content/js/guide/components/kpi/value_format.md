@@ -25,6 +25,10 @@ You can change the value color of the KPI that is displayed by setting the `valu
 
 ~~~
 kpi.setValue (42, {
-	valueTextColor: "red"
+	valueTextColor: "#ff33ff"
 });
 ~~~
+
+### Live Example
+
+<%- embedExample ('js', 'kpi1') %>
