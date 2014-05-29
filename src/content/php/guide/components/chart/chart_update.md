@@ -23,7 +23,6 @@ You can update a chart's data anytime after it's rendered using the {{ linkApi("
     $chart2 = $this->getComponentByID("chart2");
     $chart2->updateSeries("series_1", [3, 5, 2]);
   }
-$chart->updateSeries ("series_1", array(3, 5, 2);
 ~~~
 
 ### Complete Example

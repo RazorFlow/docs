@@ -12,7 +12,7 @@ You can execute a JavaScript callback when the "Apply" button on the filter has 
 ~~~
 filter_object.onApplyClick (function(params) {
 	// params.values contains the values of all the filter items
-	console.log ("The parameters are ", params.values);
+	console.log ("The parameters are ", params);
 });
 ~~~
 

@@ -129,7 +129,7 @@ By default, the current date is displayed. You can specify another date to be sh
 
 ~~~
 filter.addDateFilter ("sale_date", "Sale Date", {
-	defaultDate: "03-12-2013"
+	defaultDate: "2013-12-03"
 });
 ~~~
 
@@ -138,7 +138,7 @@ filter.addDateFilter ("sale_date", "Sale Date", {
 A date range filter allows your users to select a range of dates by specifying a start and end date, use the {{ linkApi("js", "FilterComponent", "addDateRangeFilter") }} function.
 
 ~~~
-filter.addDateFilter ("sale_period", "Sale Period");
+filter.addDateRangeFilter ("sale_period", "Sale Period");
 ~~~
 
 There are 2 parameters:
@@ -154,9 +154,9 @@ By default, the end date is the current date, and the start date is 1 month behi
 You can specify different defaults:
 
 ~~~
-filter.addDateFilter ("sale_date", "Sale Date", {
-	defaultStartDate: "03-12-2013",
-	defaultEndDate: "06-12-2013"
+filter.addDateRangeFilter ("sale_date", "Sale Date", {
+	defaultStartDate: "2013-07-08",
+	defaultEndDate: "2013-08-08"
 });
 ~~~
 
