@@ -9,3 +9,4 @@
 ### Basics
 
 * {{ linkArticle ("number_formatting")}}
+* {{ linkArticle ("js_component_kpis")}}
