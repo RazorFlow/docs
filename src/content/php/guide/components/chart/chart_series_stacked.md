@@ -2,7 +2,7 @@
 {
     "title": "Stacked Charts",
     "subtitle": "",
-    "index": 5,
+    "index": 6,
     "id": "php_chart_series_stacked"
 }
 </meta>
