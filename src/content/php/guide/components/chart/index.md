@@ -16,3 +16,4 @@ This section contains information of how to create a simple Chart Component and 
 * {{ linkArticle("php_chart_update") }}
 * {{ linkArticle("php_chart_event_click") }}
 * {{ linkArticle("php_chart_series_stacked") }}
+* {{ linkArticle("php_chart_bar") }}
