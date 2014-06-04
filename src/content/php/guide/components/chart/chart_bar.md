@@ -28,4 +28,4 @@ You can also create a stacked bar chart by setting the `seriesStacked` property 
 
 ### Complete example
 
-{{embedExample("js", "chart_bar")}}
+{{embedExample("php", "chart_bar")}}
