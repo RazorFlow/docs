@@ -15,3 +15,4 @@ This section contains information of how to create a simple Chart Component and 
 * {{ linkArticle("chart_yaxis") }}
 * {{ linkArticle("chart_update") }}
 * {{ linkArticle("chart_event_click") }}
+* {{ linkArticle("chart_series_stacked") }}

@@ -6,9 +6,6 @@
 	"index": 1
 }
 </meta>
-### Introduction
-
-Once you add the filter component in the dashboard
 
 ### Access the input values in a filter component
 

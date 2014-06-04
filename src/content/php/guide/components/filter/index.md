@@ -12,3 +12,4 @@ This section contains information of how to create a simple Chart Component and 
 
 * {{ linkArticle("php_filter_configure") }}
 * {{ linkArticle("php_filter_submit_event") }}
+* {{ linkArticle("php_filter_getvalues") }}
