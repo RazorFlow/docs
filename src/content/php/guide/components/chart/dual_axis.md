@@ -19,7 +19,7 @@ You can create a dual axes chart by calling the {{ linkApi("php", "ChartComponen
 2. The second parameter is the name of the Y Axis.
 3. The third optional parameter is an object containing **Standard number formatting properties**.
 
-To tell a series to use the new axis instead of the `primary` axis set the unique id of new axis for the yAxis parameter in the config options in the `addSeries` function.
+To tell a series to use the new axis instead of the `primary` axis, set the unique id of new axis for the yAxis parameter in the config options in the `addSeries` function.
 
 ~~~
     $chart->addSeries ("vegetables", "Vegetables", [1313, 1976, 924], array(
