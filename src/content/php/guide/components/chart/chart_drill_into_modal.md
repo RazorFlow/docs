@@ -3,7 +3,7 @@
     "title": "Chart Drill into Modal",
     "subtitle": "",
     "index": 9,
-    "id": "chart_drill_into_modal"
+    "id": "php_chart_drill_into_modal"
 }
 </meta>
 

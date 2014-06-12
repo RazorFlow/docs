@@ -18,3 +18,4 @@ This section contains information of how to create a simple Chart Component and 
 * {{ linkArticle("php_chart_series_stacked") }}
 * {{ linkArticle("php_chart_bar") }}
 * {{ linkArticle("php_dual_axis") }}
+* {{ linkArticle("php_chart_drill_into_modal") }}
