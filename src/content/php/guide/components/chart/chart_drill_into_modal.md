@@ -46,7 +46,7 @@ You can create the target chart, but since we don't know what data to put in it,
 
 You can listen to when the chart plot items are clicked using the {{ linkApi("php", "ChartComponent", "onItemClick") }} event handler. Within this callback we need to show the chart in the modal, by using the {{ linkApi("php", "Component", "showAsModal") }}.
 
-You can also use the parameters in the ``params`` variable to customize the data in the chart. Also note that you need to call the {{ linkApi("php", "ChartComponent", "onItemClick") }} function to show the component.
+You can also use the parameters in the ``params`` variable to customize the data in the chart.
 
 ~~~
     $sourceChart->onItemClick (array($sourceChart, $targetChart), "handleItemClick", $this);

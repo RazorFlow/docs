@@ -34,7 +34,7 @@ You can create a regular chart component and add it to the dashboard.
 
 ### Step 2: Create the target chart.
 
-You can create the target chart, but since we don't know what data to put in it, we can lock the chart temporarily using the {{ linkApi("js", "Component", "lock") }} function and hide it using the {{ linkApi("js", "Component", "hideComponent") }} function. This will ensure that the chart is not visibile on the dashboard when it's loaded. Don't forget to add this chart to the dashboard. Also note that you don't need to set the dimensions of this chart. 
+You can create the target chart, but since we don't know what data to put in, we can hide it using the {{ linkApi("js", "Component", "hideComponent") }} function. This will ensure that the chart is not visibile on the dashboard when it's loaded. Don't forget to add this chart to the dashboard. Also note that you don't need to set the dimensions of this chart. 
 
 ~~~
     var targetChart = new ChartComponent();
@@ -45,18 +45,19 @@ You can create the target chart, but since we don't know what data to put in it,
 
 ### Step 3: Show the target on click
 
-You can listen to when the chart plot items are clicked using the {{ linkApi("js", "ChartComponent", "onItemClick") }} event handler. Within this callback we need to show the chart in the modal, by using the {{ linkApi("js", "Component", "showAsModal") }}.
+You can listen to when the chart plot items are clicked using the {{ linkApi("js", "ChartComponent", "onItemClick") }} event handler. Within this callback we can lock the chart temporarily using the {{ linkApi("js", "Component", "lock") }} function and we need to show the chart in the modal, by using the {{ linkApi("js", "Component", "showAsModal") }}.
 
-You can also use the parameters in the ``params`` variable to customize the data in the chart. Also note that you need to call the {{ linkApi("js", "ChartComponent", "onItemClick") }} function to show the component (see {{linkArticle("lock_and_unlock")}} for more on why this is required) .
+You can also use the parameters in the ``params`` variable to customize the data in the chart. Also note that you need to call the {{ linkApi("js", "Component", "unlock") }} function to show the component (see {{linkArticle("lock_and_unlock")}} for more on why this is required) .
 
 ~~~
     sourceChart.onItemClick(function(params) {
+        targetChart.lock();
         targetChart.setCaption ("Zone-wise breakdown of " + params.label);
         // You can filter/process the data as required.
         targetChart.setLabels (["North Zone", "South Zone"]);
         targetChart.addSeries ("sales", "Sales", [21, 46]);
-        targetChart.unlock();
         targetChart.showAsModal();
+        targetChart.unlock();
     });
 ~~~
 
