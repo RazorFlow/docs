@@ -7,49 +7,61 @@
 }
 </meta>
 
-### Chart Drill into Modal
+### Show drill/detail chart in modal
 
-First create a regular chart.
+You may encounter a situation where you have one chart having high-level summarized data, and wish to show more detail about an individual item when one of them have been clicked. You can do this by opening a secondary detail chart in a modal window.
 
-~~~
-    $chart = new ChartComponent("my_first_chart");
-    $chart->setCaption("Expenses incurred on Food Consumption by Year");
-    $chart->setDimensions (4, 4);
-    $chart->setLabels (["2009", "2010", "2011"]);
-    $chart->addSeries ("beverages", "Beverages", [1355, 1916, 1150]);
-    $chart->addSeries ("packaged_foods", "Packaged Foods", [1513, 976, 1321]);
-~~~
+The steps involving this are:
 
-Then create a chart Drill into Modal by creating a chart to be drilled and then hide it, by using the {{ linkApi("php", "Component", "hideComponent") }} function. 
+1. Create the **source** chart, this is going to contain the summary and will be displayed on the dashboard.
+2. Create the **target** chart. This will be hidden by default, and opened only when the **source** is clicked.
+3. Listen to the click event on the **source** chart to show the **target**.
 
-~~~
-    $chart1 = new ChartComponent("2011_sales");
-    $chart1->setCaption("2011 Sales");
-    $chart1->setDimensions (4, 4);
-    $chart1->setLabels (["Beverages", "Vegetables"]);
-    $chart1->addSeries ("sales", "Sales", [1343, 7741]);
-    $chart1->addSeries ("quantity", "Quantity", [76, 119]);
-    $chart1->hideComponent();
-~~~
 
-Add both the chart to Dashboard.
+### Step 1: Create Source chart
+
+You can create a regular chart component and add it to the dashboard.
 
 ~~~
-    $this->addComponent ($chart);
-    $this->addComponent ($chart1);
+    $sourceChart = new ChartComponent("sourceChart");
+    $sourceChart->setDimensions (4, 4);
+    $sourceChart->setCaption("2011 Sales"); 
+    $sourceChart->setLabels (["Beverages", "Vegetables"]);
+    $sourceChart->addSeries ("sales", "Sales", [1343, 7741]);
+    $sourceChart->addSeries ("quantity", "Quantity", [76, 119]);
+    $this->addComponent ($sourceChart);
 ~~~
 
-Set a javaScript callback when an item on the chart has been clicked, by using the {{ linkApi("php", "ChartComponent", "onItemClick") }} function. Within this callback we need to show the chart in the modal, by using the {{ linkApi("php", "Component", "showAsModal") }}.
+### Step 2: Create the target chart.
+
+You can create the target chart, but since we don't know what data to put in it, we can hide the chart temporarily {{ linkApi("php", "Component", "hideComponent") }} function. This will ensure that the chart is not visibile on the dashboard when it's loaded. Don't forget to add this chart to the dashboard. Also note that you don't need to set the dimensions of this chart. 
 
 ~~~
-    $chart->onItemClick (array($chart, $chart1), "handleItemClick", $this);
+    $targetChart = new ChartComponent("targetChart");
+    $targetChart->hideComponent();
+    $this->addComponent ($targetChart);
+~~~
+
+### Step 3: Show the target on click
+
+You can listen to when the chart plot items are clicked using the {{ linkApi("php", "ChartComponent", "onItemClick") }} event handler. Within this callback we need to show the chart in the modal, by using the {{ linkApi("php", "Component", "showAsModal") }}.
+
+You can also use the parameters in the ``params`` variable to customize the data in the chart. Also note that you need to call the {{ linkApi("php", "ChartComponent", "onItemClick") }} function to show the component.
+
+~~~
+    $sourceChart->onItemClick (array($sourceChart, $targetChart), "handleItemClick", $this);
 
     public function handleItemClick ($source, $targets, $params) {
-        $chart1 = $this->getComponentByID('2011_sales');
-        $chart1->showAsModal();
+        $targetChart = $this->getComponentByID('targetChart');
+        $targetChart->setCaption ("Zone-wise breakdown of " . $params['label']);
+        // You can filter/process the data as required.
+        $targetChart->setLabels (["North Zone", "South Zone"]);
+        $targetChart->addSeries ("sales", "Sales", [21, 46]);
+        $targetChart->showAsModal();
     }
 ~~~
 
 ### Complete example
 
 {{embedExample("php", "chart_drill_into_modal")}}
+
