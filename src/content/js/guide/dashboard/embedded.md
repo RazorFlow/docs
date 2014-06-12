@@ -90,3 +90,21 @@ db.setHeight (800); // Set the height to max of 800 pixels.
 db.setWidth (600); // Set the height of 600 pixels.
 ~~~
 
+
+### Making the embed work on mobile devices
+
+The dashboard will automatically adjust into mobile mode when it detects that the size of the ``div`` is small. To make a dashboard completely responsive, consider setting the width of the dashboard as a percentage, and letting the height expand automatically.
+
+~~~
+#dashboard_target {
+	width: "90%";
+}
+~~~
+
+(or)
+
+~~~
+db.setWidth ("90%");
+~~~
+
+To see it in action, resize the browser of your dashboard.
