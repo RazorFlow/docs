@@ -83,4 +83,4 @@ $db->addComponent($gauge);
 
 ### Complete Example
 
-{{ embedExample ('js', 'gauge') }}
+{{ embedExample ('<%= lang %>', 'gauge') }}
