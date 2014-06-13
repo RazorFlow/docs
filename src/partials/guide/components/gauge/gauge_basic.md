@@ -45,7 +45,7 @@ $gauge->setLimits(0, 120);
 
 #### Setting the value
 
-You can set the value by calling the  {{ linkApi("<%= lang %>", "GaugeComponent", "setValue") }} function. The setValue takes twon paraameters,
+You can set the value by calling the  {{ linkApi("<%= lang %>", "GaugeComponent", "setValue") }} function. The setValue takes two parameters,
 
 1. `Value` : The value of the gauge in the range of min - max.
 {% if(lang === 'js') { %}
@@ -57,11 +57,15 @@ You can set the value by calling the  {{ linkApi("<%= lang %>", "GaugeComponent"
 
 {% if(lang === 'js') { %}
 ~~~
-gauge.setValue(42);
+gauge.setValue(42, {
+    numberPrefix: '$'
+});
 ~~~
 {% } else if(lang === 'php') { %}
 ~~~
-$gauge->setValue(42);
+$gauge->setValue(42, array(
+    "numberPrefix" => "$"
+));
 ~~~
 {% } %}
 
