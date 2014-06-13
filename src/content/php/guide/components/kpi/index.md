@@ -8,7 +8,7 @@
 
 ### Basic usage
 
-This section contains information of how to create a simple Chart Component and add it to your dashboard.
+This section contains information of how to create a simple KPIComponent and add it to your dashboard.
 
 * {{ linkArticle("php_kpi_basic") }}
 * {{ linkArticle("php_value_format") }}
