@@ -1,7 +1,7 @@
 <meta>
 {
     "title": "Embed a Tabbed Dashboard into an existing page",
-    "id": "php_create_tabbed",
+    "id": "php_embed_tabbed",
     "index": 5
 }
 </meta>
