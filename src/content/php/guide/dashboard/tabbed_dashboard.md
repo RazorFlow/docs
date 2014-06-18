@@ -22,77 +22,55 @@ To create a new standalone dashboard follow these steps:
 6. Use `setActive` on a dashboard to set the active dashboard.
 7. Render the tabbed Dashboard using `renderStandalone`.
 
-Here's a quick example javascript snippet on how you would add a Standalone Tabbed Dashboard.
+Here's a quick example php snippet on how you would add a Standalone Tabbed Dashboard.
 ~~~
-StandaloneDashboard(function (tdb) {
-  tdb.setTabbedDashboardTitle("Tabbed Dashboard");
-
-  // Dashboard 1 
-  var db1 = new Dashboard();
-  db1.setDashboardTitle('Table In Razorfow');
-    
-    var c1 = new TableComponent();
-    c1.setDimensions(12, 6);
-    c1.setCaption('List of items in stock');
-    c1.addColumn('ProductID', 'Product ID');
-    c1.addColumn('ProductName', 'Product Name');
-    c1.addColumn('CategoryName', 'Category');
-    c1.addColumn('UnitPrice', 'Price', {
-        dataType: "number",
-        numberPrefix: "$",
-        numberForceDecimals: true,
-        numberDecimalPoints: 2
-    });
-    c1.addColumn('UnitsInStock', 'Stock', {
-        dataType: "number"
-    });
-    c1.addColumn('Discontinued', 'Discontinued?');
-    c1.lock();
-    db1.addComponent(c1);
-
-    $.ajax({
-        url: '/static/fixtures/products.json',
-        type: 'GET',
-        success: function(products) {
-            if (_.isString(products)) {
-                products = JSON.parse(products);
-            }
-            for(var i=-1; ++i<products.length;) {
-                c1.addRow(products[i], {});
-            }
-            c1.unlock();
-        }
-    });
+<?php
+// Require the RazorFlow php wrapper
+require('path/to/razorflow.php');
+// You can rename the "MyDashboard" class to anything you want
 
 
-  // Dashboard 2
-    var db2 = new Dashboard('db2');
+class SalesDashboard extends Dashboard {
+  public function buildDashboard(){
+    $chart = new ChartComponent("chart1");
+    $chart->setCaption("The first Chart");
+    $chart->setDimensions (4, 4);
+    $chart->setLabels (["Jan", "Feb", "Mar"]);
+    $chart->addSeries ("beverages", "Beverages", array(1355, 1916, 1150));
+    $chart->addSeries ("packaged_foods", "Packaged Foods", array(1513, 976, 1321));
 
-    db2.setDashboardTitle('KPI Types Supported in RazorFlow');
+    $this->setDashboardTitle('Sales');
+    $this->setActive();
+    $this->addComponent ($chart);
+  }
+}
 
-    var c2 = new KPIComponent();
-    c2.setDimensions(4, 2);
-    c2.setCaption('Average Monthly Sales');
-    c2.setValue(513.22, {
-        numberPrefix: '$'
-    });
-    db2.addComponent(c2);
+class UsersDashboard extends Dashboard {
 
-    var c3 = new KPIComponent();
-    c3.setDimensions(4, 2);
-    c3.setCaption('Average Monthly Units');
-    c3.setValue(22);
-    c3.setSparkValues(['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], 
-                        [12.31, 10.34, 10.26, 9, 8.21, 13.41, 14.43, 23.31, 13.41, 11.4, 28.34, 29.21]);
-    db2.addComponent(c3);
+  public function buildDashboard() {
+    $kpi = new KPIComponent('kpi');
+    $kpi->setDimensions(3, 3);
+    $kpi->setCaption('Online Users');
+    $kpi->setValue(10);
+
+    $this->setDashboardTitle('Online Users');
+    $this->addComponent($kpi);
+  }
+}
 
 
-  tdb.addDashboardTab(db1, {
-        title: 'Table Dashboard'
-    });
-  tdb.addDashboardTab(db2, {
-        active: true
-    });
+class MyDashboard extends TabbedDashboard {
+  public function buildDashboard () {
+    $sales = new SalesDashboard();
+    $users = new UsersDashboard();
 
-}, {tabbed: true});
+    $this->setTabbedDashboardTitle("Tabbed Dashboard");
+    $this->addDashboardTab($sales);
+    $this->addDashboardTab($users);
+  }
+}
+
+$dashboard = new MyDashboard ()
+$dashboard->renderStandalone ();
+?>
 ~~~

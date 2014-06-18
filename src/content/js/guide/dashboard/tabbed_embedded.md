@@ -38,7 +38,7 @@ Create the HTML markup for rendering the dashboard.
 5. Use the `embedTo` method to render the tabbed dashboard as embedded.
 
 
-Here's an example javascriptsnippet of embedding a tabbed dashboard into a webpage.
+Here's an example javascript snippet of embedding a tabbed dashboard into a webpage.
 ~~~
 var tdb = new TabbedDashboard();
 tdb.setTabbedDashboardTitle("Tabbed Dashboard");
