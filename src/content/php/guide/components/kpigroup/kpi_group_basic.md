@@ -66,7 +66,7 @@ In order to set the caption color for a specific KPI, you can use the `setKPICap
 $kpi->setKPICaptionColor('firstKPI', '#006699');
 ~~~
 
-### Setting KPI Value COlor
+### Setting KPI Value Color
 
 In order to set the value color for a specific KPI, you can use the `setKPIValueColor`. This method takes two parameters:
 

@@ -1,25 +1,25 @@
 <meta>
 {
-  "title": "Getting Started with KPI Group Component",
+  "title": "Getting Started with KPI Table Component",
   "subtitle": "",
-  "id": "kpi_group_basic",
+  "id": "php_kpi_table_basic",
   "index": 0
 }
 </meta>
 
-### Adding a KPI Group Component to the dashboard
+### Adding a KPI Table Component to the dashboard
 
-In order to add a KPI Group component to the dashboard follow these steps:
-1. Create an instance of the `KPIGroupComponent`.
-2. Add a KPI to the group using `addKPI` method.
-3. Finally add the `KPIGroupComponent` instance to the dashboard..
+In order to add a KPI Table component to the dashboard follow these steps:
+1. Create an instance of the `KPITableComponent`.
+2. Add a KPI to the table using `addKPI` method.
+3. Finally add the `KPITableComponent` instance to the dashboard..
 
-### Create an instance of KPIGroupComponent
+### Create an instance of KPITableComponent
 
 ~~~
-var kpi = new KPIGroupComponent ();
-kpi.setCaption('Sales by region 2013');
-kpi.setDimensions (12, 2);
+$kpi = new KPITableComponent ();
+$kpi->setCaption('Sales by region 2013');
+$kpi->setDimensions (12, 2);
 ~~~
 
 ### Adding Individual KPIs
@@ -30,11 +30,11 @@ In order to add individual KPI to this group use the `addKPI` method.
 * The second paramter is a list of options. 
 
 ~~~
-kpi.addKPI('firstKPI', {
-    caption: 'Texas',
-    value: 2766,
-    numberPrefix: '$'
-});
+$kpi->addKPI('firstKPI', array(
+    'caption' => 'Texas',
+    'value' => 2766,
+    'numberPrefix' => '$'
+));
 ~~~
 
 ### Update a KPI
@@ -42,9 +42,9 @@ kpi.addKPI('firstKPI', {
 You can use the `updateKPI` method to update a specific KPI by `id`.
 
 ~~~~
-kpi.updateKPI('firstKPI', {
-    value: 2391,
-});
+$kpi->updateKPI('firstKPI', array(
+    'value' => 2391,
+));
 ~~~
 
 ### Deleting a KPI
@@ -52,7 +52,7 @@ kpi.updateKPI('firstKPI', {
 To delete a KPI you can use the `deleteKPI` method by passing an `id` as the parameter.
 
 ~~~
-kpi.deleteKPI('firstKPI');
+$kpi->deleteKPI('firstKPI');
 ~~~
 
 ### Setting KPI Caption color
@@ -63,7 +63,7 @@ In order to set the caption color for a specific KPI, you can use the `setKPICap
 * The `color` for KPI caption.
 
 ~~~
-kpi.setKPICaptionColor('firstKPI', '#006699');
+$kpi->setKPICaptionColor('firstKPI', '#006699');
 ~~~
 
 ### Setting KPI Value Color
@@ -74,14 +74,14 @@ In order to set the value color for a specific KPI, you can use the `setKPIValue
 * The `color` for KPI value.
 
 ~~~
-kpi.setKPIValueColor('firstKPI', '#339933');
+$kpi->setKPIValueColor('firstKPI', '#339933');
 ~~~
 
 ### Available Options that you can set for individual KPIs
 
 * **caption**: The caption of the KPI.
 * **value**: The value for the KPI.
-* All options pertainiing to number formatter can be applied here. See {{ linkArticle('number_formatting') }}.
+* All options pertainiing to number formatter can be applied here. See {{ linkArticle('php_number_formatting') }}.
 
 ### A Complete example
 

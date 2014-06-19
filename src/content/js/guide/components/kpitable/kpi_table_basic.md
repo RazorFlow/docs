@@ -1,23 +1,23 @@
 <meta>
 {
-  "title": "Getting Started with KPI Group Component",
+  "title": "Getting Started with KPI Table Component",
   "subtitle": "",
-  "id": "kpi_group_basic",
+  "id": "kpi_table_basic",
   "index": 0
 }
 </meta>
 
-### Adding a KPI Group Component to the dashboard
+### Adding a KPI Table Component to the dashboard
 
-In order to add a KPI Group component to the dashboard follow these steps:
-1. Create an instance of the `KPIGroupComponent`.
-2. Add a KPI to the group using `addKPI` method.
-3. Finally add the `KPIGroupComponent` instance to the dashboard..
+In order to add a KPI Table component to the dashboard follow these steps:
+1. Create an instance of the `KPITableComponent`.
+2. Add a KPI to the table using `addKPI` method.
+3. Finally add the `KPITableComponent` instance to the dashboard..
 
-### Create an instance of KPIGroupComponent
+### Create an instance of KPITableComponent
 
 ~~~
-var kpi = new KPIGroupComponent ();
+var kpi = new KPITableComponent ();
 kpi.setCaption('Sales by region 2013');
 kpi.setDimensions (12, 2);
 ~~~
