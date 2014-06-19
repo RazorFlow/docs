@@ -22,4 +22,6 @@ db.addComponent(chart);
 * {{ linkArticle ('table_guide')}}
 * {{ linkArticle ('kpi_guide')}}
 * {{ linkArticle ('filter_guide')}}
+* {{ linkArticle ('kpi_group_guide')}}
+* {{ linkArticle ('kpi_table_guide')}}
 

@@ -66,7 +66,7 @@ The parameters of the item `$params` is a key-value array which includes informa
 
 ### Full Example
 
-{{ embedExample ("php" "chart_drill0") }}
+{{ embedExample ("php", "chart_drill0") }}
 
 ## Additional notes
 

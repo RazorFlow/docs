@@ -19,3 +19,4 @@ This section contains information of how to create a simple Chart Component and 
 * {{ linkArticle("chart_bar") }}
 * {{ linkArticle("dual_axis") }}
 * {{ linkArticle("chart_drill_into_modal") }}
+* {{ linkArticle("chart_drilldown") }}
