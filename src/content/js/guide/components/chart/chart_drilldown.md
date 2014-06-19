@@ -1,9 +1,9 @@
 <meta>
 {
-    "title": "Breadcrumb Drill-Downs",
+    "title": "Drill down data using breadcrumbs",
     "subtitle": "",
-    "index": 7,
-    "id": "chart_bar"
+    "index": 8,
+    "id": "chart_drilldown"
 }
 </meta>
 
@@ -84,4 +84,14 @@ Notice how the `done` function can be called inside the AJAX success function
 
 ### Get values of previous drill 
 
-For example, while filtering cities, you might need to see 
+For example, while filtering cities, you might need to perform a query which also knows the country and state. In other words, you need to know the entire history of the drilldown. For this, the `params` object includes a separate key called `drillLabelList`. 
+
+chart.addDrillStep (function (done, params) {
+    alert ("Filtering states for state: " + params.label);
+    alert ("The country is: " + params.drillLabelList [0]); // drillLabelList is now ["Country", "State"]
+    chart.setLabels ([ /* List of cities in the selected state */])
+    chart.addSeries ("sales", "Sales", [ /* city-wise sales */])
+
+    done (); // This is required
+});
+
