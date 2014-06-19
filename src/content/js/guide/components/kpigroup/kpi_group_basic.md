@@ -11,7 +11,7 @@
 
 In order to add a KPI Group component to the dashboard follow these steps:
 1. Create an instance of the `KPIGroupComponent`.
-2. Add a KPI to the group using `addKPI` method.
+2. Add a KPI to the group using {{ linkApi('js', 'MultiKPIComponent', 'addKPI') }} method.
 3. Finally add the `KPIGroupComponent` instance to the dashboard..
 
 ### Create an instance of KPIGroupComponent
@@ -24,7 +24,7 @@ kpi.setDimensions (12, 2);
 
 ### Adding Individual KPIs
 
-In order to add individual KPI to this group use the `addKPI` method. 
+In order to add individual KPI to this group use the {{ linkApi('js', 'MultiKPIComponent', 'addKPI') }} method. 
 
 * The first paramater is a `id`, this `id` will be used to update or delete a KPI which is described in the following sections.
 * The second paramter is a list of options. 
@@ -39,7 +39,7 @@ kpi.addKPI('firstKPI', {
 
 ### Update a KPI
 
-You can use the `updateKPI` method to update a specific KPI by `id`.
+You can use the {{ linkApi('js', 'MultiKPIComponent', 'updateKPI') }} method to update a specific KPI by `id`.
 
 ~~~~
 kpi.updateKPI('firstKPI', {
@@ -49,7 +49,7 @@ kpi.updateKPI('firstKPI', {
 
 ### Deleting a KPI
 
-To delete a KPI you can use the `deleteKPI` method by passing an `id` as the parameter.
+To delete a KPI you can use the {{ linkApi('js', 'MultiKPIComponent', 'deleteKPI') }} method by passing an `id` as the parameter.
 
 ~~~
 kpi.deleteKPI('firstKPI');
@@ -57,7 +57,7 @@ kpi.deleteKPI('firstKPI');
 
 ### Setting KPI Caption color
 
-In order to set the caption color for a specific KPI, you can use the `setKPICaptionColor`. This method takes two parameters:
+In order to set the caption color for a specific KPI, you can use the {{ linkApi('js', 'MultiKPIComponent', 'setKPICaptionColor') }}. This method takes two parameters:
 
 * The `id` of the KPI.
 * The `color` for KPI caption.
@@ -68,7 +68,7 @@ kpi.setKPICaptionColor('firstKPI', '#006699');
 
 ### Setting KPI Value Color
 
-In order to set the value color for a specific KPI, you can use the `setKPIValueColor`. This method takes two parameters:
+In order to set the value color for a specific KPI, you can use the {{ linkApi('js', 'MultiKPIComponent', 'setKPIValueColor') }}. This method takes two parameters:
 
 * The `id` of the KPI.
 * The `color` for KPI value.
@@ -85,6 +85,5 @@ kpi.setKPIValueColor('firstKPI', '#339933');
 
 ### A Complete example
 
-<!-- TODO Embed the right example here -->
-<!-- <%- embedExample ('js', 'kpi0') %> -->
+<%- embedExample ('js', 'kpi_group') %>
 
