@@ -2,7 +2,7 @@
 {
   "title": "KPI Group Component",
   "subtitle": "",
-  "id":"kpi_group_guide"
+  "id":"php_kpi_group_guide"
 }
 </meta>
 
@@ -12,4 +12,4 @@ This section contains information of how to create a simple KPI Group Component 
 
 The KPI Group Component lets you group several KPI's and display it neatly.
 
-* {{ linkArticle("kpi_group_basic") }}
+* {{ linkArticle("php_kpi_group_basic") }}
