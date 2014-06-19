@@ -25,6 +25,8 @@
             <li>{{ linkArticle ('php_table_guide') }}</li>
             <li>{{ linkArticle('php_filter_guide') }} </li>
             <li>{{ linkArticle ('php_kpi_guide') }}</li>
+            <li>{{ linkArticle ('php_kpi_group_guide') }}</li>
+            <li>{{ linkArticle ('php_kpi_table_guide') }}</li>
           </ul>
         </li>
       </ul></p>
