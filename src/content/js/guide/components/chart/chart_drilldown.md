@@ -2,7 +2,7 @@
 {
     "title": "Drill down data using breadcrumbs",
     "subtitle": "",
-    "index": 8,
+    "index": 9,
     "id": "chart_drilldown"
 }
 </meta>
@@ -62,7 +62,7 @@ The parameters of the item that was clicked on by the user are provided.
 
 ### Full Example
 
-{{ embedExample ("js" "chart_drill0") }}
+{{ embedExample ("js", "chart_drill0") }}
 
 ## Additional notes
 
@@ -78,7 +78,7 @@ chart.addDrillStep (function (done, params) {
         }
     })
 });
-~~~~
+~~~
 
 Notice how the `done` function can be called inside the AJAX success function
 
