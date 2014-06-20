@@ -78,7 +78,7 @@ chart.addDrillStep (function (done, params) {
         }
     })
 });
-~~~~
+~~~
 
 Notice how the `done` function can be called inside the AJAX success function
 
