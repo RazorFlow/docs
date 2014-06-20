@@ -1,6 +1,6 @@
 <meta>
 {
-    "title": "Creating a dashboard",
+    "title": "Creating a standalone dashboard",
     "id": "create_standalone",
     "index": 0
 }
