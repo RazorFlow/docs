@@ -18,7 +18,6 @@
   </div>
   <div class="col-md-4">
     <h3>Components</h3>
-    <p>{{ linkArticle ("component_parts", "Parts of a Component")}}</p>
     <p>{{ linkArticle ("component_layout", "Dimensions, Position and Layout")}}</p>
     <p>{{ linkArticle ("number_formatting", "Formatting Data for Display")}}</p>
     <p>{{ linkArticle ("js_component_kpis", "Component KPIs")}}</p>
@@ -37,7 +36,7 @@
     <p>{{ linkArticle ("chart_update", "Updating values")}}</p>
     <p>{{ linkArticle ("series_config", "Configure Series")}}</p>
     <p>{{ linkArticle ("dual_axis", "Dual Y-Axes")}}</p>
-    <p>{{ linkArticle ("chart_events", "Chart Events")}}</p>
+    <p>{{ linkArticle ("chart_event_click", "Chart Events")}}</p>
     <p>{{ linkArticle ("chart_guide", "More Articles...")}}</p>
   </div>
   <div class="col-md-4">
