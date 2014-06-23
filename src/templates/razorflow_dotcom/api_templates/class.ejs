@@ -44,4 +44,6 @@
 }
 %>
 
-
+<% if(item.events){ %> 
+<%- render('events.ejs', {tree: tree, events: item.events}) %>
+<% } %>
