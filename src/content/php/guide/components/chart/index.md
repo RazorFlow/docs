@@ -20,3 +20,4 @@ This section contains information of how to create a simple Chart Component and 
 * {{ linkArticle("php_dual_axis") }}
 * {{ linkArticle("php_chart_drill_into_modal") }}
 * {{ linkArticle("php_chart_drilldown") }}
+* {{ linkArticle("php_chart_config") }}
