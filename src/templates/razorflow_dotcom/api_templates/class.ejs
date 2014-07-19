@@ -44,4 +44,13 @@
 }
 %>
 
-
+<% if(item.events){ %> 
+<h2>Events</h3> 
+<% if(item.augments) { %>
+<% var base = tree.findNodeByClassName(item.augments.name); %>
+<% if(base.events){ %> 
+<%- render('events.ejs', {tree: tree, events: base.events}) %>
+<% } %>
+<% } %>
+<%- render('events.ejs', {tree: tree, events: item.events}) %>
+<% } %>

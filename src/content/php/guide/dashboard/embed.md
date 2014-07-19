@@ -10,7 +10,7 @@
 
 You can embed the dashboard into an existing application. In this situation the dashboard is directly embedded and integrated as part of your page. This allows you to add a dashboard into an existing application.
 
-For example, you can see an example of an embedded dashboard here: [examples.razorflow.com/apps/php_embedded/](examples.razorflow.com/apps/php_embedded/).
+For example, you can see an example of an embedded dashboard here: [http://examples.razorflow.com/apps/php_embedded/](examples.razorflow.com/apps/php_embedded/).
 
 The steps to embed a dashboard into your applications are:
 
@@ -68,6 +68,7 @@ require "salesdashboard.php";
 		<link rel="stylesheet" href="razorflow_php/static/rf/css/razorflow.min.css"/>
 		<script src="razorflow_php/static/rf/js/jquery.min.js" type="text/javascript"></script>
 		<script src="razorflow_php/static/rf/js/razorflow.wrapper.min.js" type="text/javascript"></script>
+    <script src="razorflow_php/static/rf/js/razorflow.devtools.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<h1>Embedded Dashboard!!</h1>

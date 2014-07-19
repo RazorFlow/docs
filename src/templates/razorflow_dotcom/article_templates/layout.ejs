@@ -1,31 +1,46 @@
 <?php 
 function custom_title () {
-    return "<%= title %>";
+    return "Feature Browser";
 }
 
 function rf_topbar () {
     return array (
-        'url' => '/docs/dashboard/',
-        'title' => 'RazorFlow Documentation'
+        'url' => '/features/',
+        'title' => 'Features'
     );
 }
 
-
 function extra_scripts () {
   return array(
-    'vendor/kendo.custom.min.js',
-    'vendor/prism.min.js',
+    'vendor/jquery.validate.min.js',
+    'vendor/underscore.min.js',
+    'vendor/codemirror/js/codemirror.js',
+    'vendor/codemirror/mode/javascript.js',
+    'vendor/codemirror/mode/xml.js',
+    'vendor/codemirror/mode/htmlmixed.js',
+    'vendor/codemirror/mode/clike.js',
+    'vendor/codemirror/mode/php.js',
     'js/rfDocs.js'
   );
 }
 
-function extra_styles () {
-  return array(
-    'vendor/kendo.common.min.css',
-    'vendor/prism.css',
-    'vendor/kendo.bootstrap.min.css'
-  );
+function extra_styles() {
+    return array(
+        'vendor/codemirror/css/codemirror.css',
+        'vendor/codemirror/theme/rftheme.css'
+    );
 }
+
+if(!function_exists('rf_trackpage')) {
+    function rf_trackpage () {
+        return array (
+            'name' => "Download Start",
+            'opts' => array (
+            )
+        );
+    }
+}
+
 
 require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
 ?>
@@ -36,26 +51,26 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
     </ol>
   </div>
     <div class="row">
-        <div class="col-md-3">
-            <ul id="docTree">
+        <div class="col-md-4">
+            <ul id="docTree" class="rf-tree">
                 <%- articleNav %>
                 <%- apiNav %>
             </ul>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="docContent">
               <h1> <%= title %> </h1>
                 <%- content %>
             </div>
             <div class="links">
               <% if(prev) { %>
-                <a class="btn btn-primary pull-left" href="<%= prev.path %>">
+                <a class="article-nav-button pull-left" href="<%= prev.path %>">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   <%= prev.title %>
                 </a>
               <% } %>
               <% if(next) { %>
-                <a class="btn btn-primary pull-right" href="<%= next.path %>">
+                <a class="article-nav-button pull-right" href="<%= next.path %>">
                   <%= next.title %>
                   <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>

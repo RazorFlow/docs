@@ -30,6 +30,7 @@ Copy the RazorFlow `js`, `css` and `img` files to your project. And create a new
 		<link rel="stylesheet" href="razorflow_js/css/razorflow.min.css"/>
 		<script src="razorflow_js/js/jquery.min.js" type="text/javascript"></script>
 		<script src="razorflow_js/js/razorflow.min.js" type="text/javascript"></script>
+		<script src="razorflow_js/js/razorflow.devtools.min.js" type="text/javascript"></script>
 		<style>
 			#dashboard_target {
 				width: 800px;

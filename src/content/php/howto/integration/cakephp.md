@@ -80,6 +80,7 @@ Now, we have to embed the dashboard inside a view. The specific view will depend
 ~~~
 <?php
 $this->Html->script('razorflow.wrapper.min', array('inline' => false));
+$this->Html->script('razorflow.devtools.min', array('inline' => false));
 $this->Html->css('razorflow.min', null, array('inline' => false));
 ?>
 <h2>Embedded Dashboard</h2>

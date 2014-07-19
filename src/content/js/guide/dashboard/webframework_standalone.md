@@ -53,6 +53,7 @@ Upload/Copy the JS and CSS files included in the RazorFlow zip file to your stat
         <link rel="stylesheet" type="text/css" href="css/razorflow.min.css">
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/razorflow.min.js"></script>
+        <script type="text/javascript" src="js/razorflow.devtools.min.js"></script>
     </head>  
 ~~~
 
