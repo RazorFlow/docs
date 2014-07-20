@@ -57,5 +57,19 @@ Usually, you will need to specify the number formatting using an API specific to
 	<td>42.13531</td>
 	<td>42.13</td>
 </tr>
+<tr>
+	<td><code>numberThousandsSeparator</code></td>
+	<td>The string used to separate thousands in a large number.</td>
+	<td><code>.</code></td>
+	<td>41355421</td>
+	<td>41.355.421</td>
+</tr>
+<tr>
+	<td><code>numberDecimalsSeparator</code></td>
+	<td>The string used to separate decimals from the whole number.</td>
+	<td><code>,</code></td>
+	<td>3.14159</td>
+	<td>3,14159</td>
+</tr>
 </tbody>
 </table>
