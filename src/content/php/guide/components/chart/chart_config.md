@@ -2,7 +2,7 @@
 {
 	"title": "Chart Options and Advanced Configuration",
 	"subtitle": "",
-	"index": 10,
+	"index": 11,
 	"id": "php_chart_config"
 }
 </meta>
