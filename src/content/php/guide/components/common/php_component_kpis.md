@@ -34,7 +34,7 @@ $chart->addComponentKPI ("total_profit", array(
 
 ### Updating a component KPI
 
-If you wish to update the value of a Component KPI you can do so using the {{ linkApi("js", "Component", "updateComponentKPI")}} function. Note that currently only updating the value is supported. Updating the caption and other parameters will be supported in a later release.
+If you wish to update the value of a Component KPI you can do so using the {{ linkApi("php", "Component", "updateComponentKPI")}} function. Note that currently only updating the value is supported. Updating the caption and other parameters will be supported in a later release.
 
 ~~~
 

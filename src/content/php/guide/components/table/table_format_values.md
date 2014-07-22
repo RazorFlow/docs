@@ -21,7 +21,7 @@ $table->addColumn("sales", "Sales Amount", array(
 
 ### Change the way numbers are displayed 
 
-You can configure how number are formatted and displayed in the table using the standard {{ ref("numberFormatting") }}. However, you need to also specify that the column's data type is a number for this.
+You can configure how number are formatted and displayed in the table using the standard {{ ref("phpNumberFormatting") }}. However, you need to also specify that the column's data type is a number for this.
 
 ~~~
 $table->addColumn("sales", "Sales Amount", array(
