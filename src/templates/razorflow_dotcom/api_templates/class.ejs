@@ -1,6 +1,6 @@
-<h1>Class <%= item.class.name %></h1>
-
-<h4><%= item.signature %></h4>
+<h1 class="bold">Class <%= item.class.name %></h1>
+<hr/>
+<h4 class="bold"><%= item.signature %></h4>
 
 <% if(item.augments) { %>
     <p>inherits from 
@@ -13,21 +13,21 @@
         %>
     </p>
 <% } %>
-<% if(item.params) { %>
+<% if(item.params.length && item.params[0]) { %>
 <%- render('params.ejs', {tree: tree, params: item.params}) %>
 <% } %>
 <% if(item.example) { %>
 <h2>Examples</h2>
 <pre><code><%= item.example.code %></code></pre>
 <% } %>
-<h2>Methods</h2>
+<h4 class="bold">Methods</h4>
 <% if(item.methods) { %> 
 <% for(j=0; j<item.methods.length; j++) {%>
         <%- render('method.ejs', {tree: tree, item: item.methods[j]}) %>
     <% } %>
 <% } %>
     
-<h2>Inherited Methods</h2>
+<h4>Inherited Methods</h4>
 <% if(item.augments) { 
     var tItem = item;
     while(tItem.augments) {
@@ -45,7 +45,7 @@
 %>
 
 <% if(item.events){ %> 
-<h2>Events</h3> 
+<h4>Events</h4> 
 <% if(item.augments) { %>
 <% var base = tree.findNodeByClassName(item.augments.name); %>
 <% if(base.events){ %> 
