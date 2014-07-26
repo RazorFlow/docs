@@ -1,16 +1,19 @@
 <div id="<%= item.method.name %>" class='rfApiMethod'>
     
-    <h3><a href="#<%= item.method.name %>" class="rfDocPermalink pull-right">#</a><%= item.method.name %></h3>
+    <h3><%= item.method.name %></h3>
+    <hr/>
     <p>
         <code><%= item.signature %></code>
     </p>
     <p><%= item.desc.content %></p>
-    <h4>Params</h4>
-    <% if(item.params) { %>
+    <h5>Params</h5>
+    <% if(item.params.length && item.params[0]) { %>
         <%- render('params.ejs', {tree: tree, params: item.params}) %>
+    <% } else { %>
+        None
     <% } %>
     <% if(item.example) { %>
-        <h4>Example</h4>
+        <h5>Example</h5>
         <pre><code><%= item.example.code %></code></pre>
     <% } %>
 </div>
