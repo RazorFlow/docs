@@ -72,7 +72,9 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
         </div>
         <div class="col-md-8 docContentWrapper">
             <div class="docContent">
+              <% if(title){ %>
               <h1> <%= title %> </h1>
+              <% } %>
                 <%- content %>
             </div>
             <div class="links">
