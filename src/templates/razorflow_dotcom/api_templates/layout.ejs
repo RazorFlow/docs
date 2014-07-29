@@ -52,15 +52,17 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
                     <%- articleNav %>
                 </ul>
             </div>
-            <div class="col-md-9">
-                <% 
-                var classNode = tree.findNodeByClassName(currentClass);
-                if(currentClass != 'index' && (classNode.access && classNode.access.name !== 'private')) { 
-                %>
-                    <%- render('class.ejs', {tree: tree, item: tree.findNodeByClassName(currentClass)}) %>
-            <% } else { %>
-                <%- render('index.ejs', {}) %>
-            <% } %>
+            <div class="docContentWrapper">
+                <div class="col-md-9 docContent">
+                    <% 
+                    var classNode = tree.findNodeByClassName(currentClass);
+                    if(currentClass != 'index' && (classNode.access && classNode.access.name !== 'private')) { 
+                    %>
+                        <%- render('class.ejs', {tree: tree, item: tree.findNodeByClassName(currentClass)}) %>
+                <% } else { %>
+                    <%- render('index.ejs', {}) %>
+                <% } %>
+                </div>
             </div>
         </div>
     </div>

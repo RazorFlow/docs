@@ -24,7 +24,16 @@
                     <%= param.desc %>
                     <% var param = findConstantsObject(param.paramType); 
                         if(param) { %>
-                        <table class="table table-condensed rfParamsTable"><thead><th>Name</th><th>Type</th><th>Description</th></thead>
+                        <div class="propsTableWrapper">
+                        <table class="propsTableInactive">
+                            <tr>
+                                <td>Properties - <a href="#" class="params_options" data-id="<%= item_options_id %>">Show</a></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div class="optionsTableInactive">
+                        <table class="table table-condensed rfParamsTable" id="<%= item_options_id %>"><thead><th>Name</th><th>Type</th><th>Description</th></thead>
                         <tbody>
                             <% for(var key in param) { %>
                             <tr>
@@ -35,6 +44,7 @@
                             <% } %>
                         </tbody>
                         </table>
+                        </div>
                     <% } %>
                 </td>
             </tr>

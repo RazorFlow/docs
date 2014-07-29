@@ -7,7 +7,7 @@
     <p><%= item.desc.content %></p>
     <h4>Params</h4>
     <% if(item.params) { %>
-        <%- render('params.ejs', {tree: tree, params: item.params}) %>
+        <%- render('params.ejs', {tree: tree, params: item.params, item_id: item.method.name}) %>
     <% } %>
     <% if(item.example) { %>
         <h4>Example</h4>
