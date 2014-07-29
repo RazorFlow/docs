@@ -8,7 +8,7 @@
     <p><%= item.desc.content %></p>
     <h5>Params</h5>
     <% if(item.params.length && item.params[0]) { %>
-        <%- render('params.ejs', {tree: tree, params: item.params}) %>
+        <%- render('params.ejs', {tree: tree, params: item.params, item_options_id: "options_" + item.method.name}) %>
     <% } else { %>
         None
     <% } %>

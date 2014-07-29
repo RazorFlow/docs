@@ -1,6 +1,5 @@
-<h1 class="bold">Class <%= item.class.name %></h1>
-<hr/>
-<h4 class="bold"><%= item.signature %></h4>
+<h1>Class <%= item.class.name %></h1>
+<h4><%= item.signature %></h4>
 
 <% if(item.augments) { %>
     <p>inherits from 
@@ -20,7 +19,7 @@
 <h2>Examples</h2>
 <pre><code><%= item.example.code %></code></pre>
 <% } %>
-<h4 class="bold">Methods</h4>
+<h4>Methods</h4>
 <% if(item.methods) { %> 
 <% for(j=0; j<item.methods.length; j++) {%>
         <%- render('method.ejs', {tree: tree, item: item.methods[j]}) %>

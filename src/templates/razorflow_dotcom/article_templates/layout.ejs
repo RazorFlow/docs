@@ -44,6 +44,19 @@ if(!function_exists('rf_trackpage')) {
 
 require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
 ?>
+<div class="col-md-12 rfDocHeader">
+  <div class="container">
+    <div class="col-md-8"><h2><%= options.topBarTitle %></h2></div>
+    <div class="form-group col-md-4">
+          <form id="docs_search" action="" method="get">
+            <div class="input-group search-box">
+                <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-search"></span></span>
+                <input id="form1_q" name="q" class="form-control" type="search" placeholder="SEARCH DOCUMENTATION">
+            </div>
+        </form> 
+    </div>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <ol class="breadcrumb rfTocBreadcrumb">
@@ -51,12 +64,13 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
     </ol>
   </div>
     <div class="row">
+      <hr class="docDivider">
         <div class="col-md-4">
-            <ul id="docTree" class="rf-tree">
+            <ul id="docTree" class="rf-tree docTree">
                 <%- articleNav %>
             </ul>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 docContentWrapper">
             <div class="docContent">
               <h1> <%= title %> </h1>
                 <%- content %>
@@ -64,14 +78,14 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
             <div class="links">
               <% if(prev) { %>
                 <a class="article-nav-button pull-left" href="<%= prev.path %>">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="rf-icon rf_arrow_left prev-article"></span>
                   <%= prev.title %>
                 </a>
               <% } %>
               <% if(next) { %>
                 <a class="article-nav-button pull-right" href="<%= next.path %>">
                   <%= next.title %>
-                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="rf-icon rf_arrow_right next-article"></span>
                 </a>
               <% } %>
                 
