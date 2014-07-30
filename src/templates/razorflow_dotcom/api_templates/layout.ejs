@@ -46,8 +46,8 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
 ?>
 <div class="col-md-12 rfDocHeader">
   <div class="container">
-    <div class="col-md-8"><h2><%= options.topBarTitle %></h2></div>
-    <div class="form-group col-md-4">
+    <div class="col-xs-8"><h2><%= options.topBarTitle %></h2></div>
+    <div class="form-group col-xs-4">
           <form id="docs_search" action="" method="get">
             <div class="input-group search-box">
                 <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-search"></span></span>
@@ -60,14 +60,9 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
   <div class="row docTopBarExtraSpace"></div>
     <div class="container">
         <div class="row">
-          <hr class="docDivider">
-            <div class="col-md-4">
-                <ul id="docTree" class="rf-tree docTree">
-                    <%- articleNav %>
-                </ul>
-            </div>
+          <hr class="docDivider hidden-sm">
             <div class="docContentWrapper">
-                <div class="col-md-8 docContent">
+                <div class="col-md-8 docContent pull-right">
                     <% 
                     var classNode = tree.findNodeByClassName(currentClass);
                     if(currentClass != 'index' && (classNode.access && classNode.access.name !== 'private')) { 
@@ -77,6 +72,11 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
                     <%- render('index.ejs', {}) %>
                 <% } %>
                 </div>
+            </div>
+            <div class="col-md-4">
+                <ul id="docTree" class="rf-tree docTree">
+                    <%- articleNav %>
+                </ul>
             </div>
         </div>
     </div>
