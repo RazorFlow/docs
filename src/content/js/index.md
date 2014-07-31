@@ -76,4 +76,3 @@
     <p>{{ linkArticle ("js_pattern_authentication", "Generic Authentication Concepts")}}</p>
   </div>
 </div>
-</div>
