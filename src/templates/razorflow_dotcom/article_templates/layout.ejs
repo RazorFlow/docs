@@ -3,13 +3,6 @@ function custom_title () {
     return "Feature Browser";
 }
 
-function rf_topbar () {
-    return array (
-        'url' => '/features/',
-        'title' => 'Features'
-    );
-}
-
 function extra_scripts () {
   return array(
     'vendor/jquery.validate.min.js',
@@ -76,12 +69,12 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
               <% if(prev) { %>
                 <a class="article-nav-button pull-left" href="<%= prev.path %>">
                   <span class="rf-icon rf_arrow_left prev-article"></span>
-                  <%= prev.title %>
+                  <span class="hidden-xs"><%= prev.title %></span>
                 </a>
               <% } %>
               <% if(next) { %>
                 <a class="article-nav-button pull-right" href="<%= next.path %>">
-                  <%= next.title %>
+                  <span class="hidden-xs"><%= next.title %></span>
                   <span class="rf-icon rf_arrow_right next-article"></span>
                 </a>
               <% } %>
