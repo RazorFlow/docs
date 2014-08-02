@@ -46,9 +46,9 @@
   </div>
   <div class="col-md-4">
     <h3>Forms</h3>
-    <p>{{ linkArticle ("filter_configure", "Create a form")}}</p>
-    <p>{{ linkArticle ("filter_getvalues", "Get input values")}}</p>
-    <p>{{ linkArticle ("filter_submit_event", "Form Events")}}</p>
+    <p>{{ linkArticle ("form_configure", "Create a form")}}</p>
+    <p>{{ linkArticle ("form_getvalues", "Get input values")}}</p>
+    <p>{{ linkArticle ("form_submit_event", "Form Events")}}</p>
   </div>
 </div>
 <div class="row">

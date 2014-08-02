@@ -22,7 +22,7 @@
           <ul>
             <li>{{ linkArticle('chart_guide') }}</li>
             <li>{{ linkArticle ('table_guide') }}</li>
-            <li>{{ linkArticle('filter_guide') }} </li>
+            <li>{{ linkArticle('form_guide') }} </li>
             <li>{{ linkArticle ('kpi_guide') }}</li>
             <li>{{ linkArticle ('kpi_group_guide') }}</li>
             <li>{{ linkArticle ('kpi_table_guide') }}</li>

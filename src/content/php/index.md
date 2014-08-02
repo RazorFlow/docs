@@ -44,9 +44,9 @@
   </div>
   <div class="col-md-4">
     <h3>Forms</h3>
-    <p>{{ linkArticle ("php_filter_configure", "Create a form")}}</p>
-    <p>{{ linkArticle ("php_filter_getvalues", "Get input values")}}</p>
-    <p>{{ linkArticle ("php_filter_submit_event", "Form Events")}}</p>
+    <p>{{ linkArticle ("php_form_configure", "Create a form")}}</p>
+    <p>{{ linkArticle ("php_form_getvalues", "Get input values")}}</p>
+    <p>{{ linkArticle ("php_form_submit_event", "Form Events")}}</p>
   </div>
 </div>
 <div class="row">

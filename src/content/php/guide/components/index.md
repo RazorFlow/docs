@@ -21,7 +21,7 @@ $this->addComponent($chart);
 * {{ linkArticle ('php_chart_guide')}}
 * {{ linkArticle ('php_table_guide')}}
 * {{ linkArticle ('php_kpi_guide')}}
-* {{ linkArticle ('php_filter_guide')}}
+* {{ linkArticle ('php_form_guide')}}
 * {{ linkArticle ('php_kpi_group_guide')}}
 * {{ linkArticle ('php_kpi_table_guide')}}
 
