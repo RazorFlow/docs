@@ -41,12 +41,13 @@ require $_SERVER['DOCUMENT_ROOT']."/layout/header.php";
   <div class="container">
     <div class="col-xs-12 col-sm-8 topBarTitle"><h2><%= options.topBarTitle %></h2></div>
     <div class="form-group col-xs-12 col-sm-4">
-          <form id="docs_search" action="" method="get">
-            <div class="input-group search-box">
-                <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-search"></span></span>
-                <input id="form1_q" name="q" class="form-control" type="search" placeholder="SEARCH DOCUMENTATION">
-            </div>
-        </form> 
+                <form id="docs_search" action="/search/site.php" method="get">
+                  <div class="input-group search-box">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-search"></span></span>
+                      <input type="hidden" name="start" value="1">
+                      <input id="form1_q" name="q" class="form-control" type="search" placeholder="SEARCH DOCUMENTATION">
+                  </div>
+              </form> 
     </div>
   </div>
 </div>
