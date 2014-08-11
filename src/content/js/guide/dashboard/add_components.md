@@ -33,3 +33,14 @@ Once you have created a dashboard, and configured the components, you can add co
 	// ... configuration ...
 	db.addComponent(chart);
 ~~~
+
+### Overriding component order in the dashboard
+
+You can change the order of the components displayed in the dashboard by calling the `overrideDisplayOrderIndex` function on the component and specifying an index. like this,
+
+~~~
+    chart.overrideDisplayOrderIndex (3);
+~~~
+#### Example
+
+{{ embedExample("js", "component_order_index") }}
