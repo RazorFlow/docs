@@ -23,7 +23,7 @@ class MyDashboard extends StandaloneDashboard {
 	}
 }
 
-$dashboard = new MyDashboard ()
+$dashboard = new MyDashboard ();
 $dashboard->renderStandalone ();
 ?>
 ~~~
